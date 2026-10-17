@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 722c39256f6149c478d17cc48cca9748
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Energy_RightHandBlast.controller
+  uploadId: 517650

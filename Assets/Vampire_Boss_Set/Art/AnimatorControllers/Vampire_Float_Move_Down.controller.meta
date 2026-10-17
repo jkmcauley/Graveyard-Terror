@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b84ac52a532cef43b412e085064d001
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Float_Move_Down.controller
+  uploadId: 517650

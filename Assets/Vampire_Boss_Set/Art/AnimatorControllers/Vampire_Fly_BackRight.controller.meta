@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b79b9b7e7a1997a45913a4534d3d60ac
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Fly_BackRight.controller
+  uploadId: 517650

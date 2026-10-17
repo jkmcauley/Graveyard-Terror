@@ -1,0 +1,214 @@
+SF_Zombie_01.prefab
+SF_Zombie_01
+  CATRigHub001
+    CATRigLLeg1
+      CATRigLLeg2
+        CATRigLLegAnkle
+          CATRigLLegDigit11
+    CATRigRLeg1
+      CATRigRLeg2
+        CATRigRLegAnkle
+          CATRigRLegDigit11
+    CATRigSpine1
+      CATRigSpine2
+        CATRigHub002
+          CATRigLArmCollarbone
+            CATRigLArm1
+              CATRigLArm2
+                CATRigLArmPalm
+                  CATRigLArmDigit11
+          CATRigRArmCollarbone
+            CATRigRArm1
+              CATRigRArm2
+                CATRigRArmPalm
+                  CATRigRArmDigit11
+          CATRigSpine
+            CATRigHub003
+              CATRigHub003Bone001
+              CATRigHub003Bone002
+              CATRigHub003Bone003
+  SF_Zombie_01_LOD0
+  SF_Zombie_01_LOD1
+  SF_Zombie_01_LOD2
+
+avatar already humanoid
+SF_Zombie_02.prefab
+SF_Zombie_02
+  CATRigHub001
+    CATRigLLeg1
+      CATRigLLeg2
+        CATRigLLegAnkle
+          CATRigLLegDigit11
+    CATRigRLeg1
+      CATRigRLeg2
+        CATRigRLegAnkle
+          CATRigRLegDigit11
+    CATRigSpine1
+      CATRigSpine2
+        CATRigHub002
+          CATRigLArmCollarbone
+            CATRigLArm1
+              CATRigLArm2
+                CATRigLArmPalm
+                  CATRigLArmDigit11
+          CATRigRArmCollarbone
+            CATRigRArm1
+              CATRigRArm2
+                CATRigRArmPalm
+                  CATRigRArmDigit11
+          CATRigSpine
+            CATRigHub003
+              CATRigHub003Bone001
+              CATRigHub003Bone002
+              CATRigHub003Bone003
+              SF_Police cap_LOD0
+              SF_Police cap_LOD1
+              SF_Police cap_LOD2
+  SF_Zombie_02_LOD0
+  SF_Zombie_02_LOD1
+  SF_Zombie_02_LOD2
+
+avatar already humanoid
+SF_Zombie_03.prefab
+SF_Zombie_03
+  CATRigHub001
+    CATRigLLeg1
+      CATRigLLeg2
+        CATRigLLegAnkle
+          CATRigLLegDigit11
+    CATRigRLeg1
+      CATRigRLeg2
+        CATRigRLegAnkle
+          CATRigRLegDigit11
+    CATRigSpine1
+      CATRigSpine2
+        CATRigHub002
+          CATRigLArmCollarbone
+            CATRigLArm1
+              CATRigLArm2
+                CATRigLArmPalm
+                  CATRigLArmDigit11
+          CATRigRArmCollarbone
+            CATRigRArm1
+              CATRigRArm2
+                CATRigRArmPalm
+                  CATRigRArmDigit11
+          CATRigSpine
+            CATRigHub003
+              CATRigHub003Bone001
+              CATRigHub003Bone002
+              CATRigHub003Bone003
+  SF_Zombie_03_LOD0
+  SF_Zombie_03_LOD1
+  SF_Zombie_03_LOD2
+
+avatar already humanoid
+SF_Zombie_04.prefab
+SF_Zombie_04
+  CATRigHub001
+    CATRigLLeg1
+      CATRigLLeg2
+        CATRigLLegAnkle
+          CATRigLLegDigit11
+    CATRigRLeg1
+      CATRigRLeg2
+        CATRigRLegAnkle
+          CATRigRLegDigit11
+    CATRigSpine1
+      CATRigSpine2
+        CATRigHub002
+          CATRigLArmCollarbone
+            CATRigLArm1
+              CATRigLArm2
+                CATRigLArmPalm
+                  CATRigLArmDigit11
+          CATRigRArmCollarbone
+            CATRigRArm1
+              CATRigRArm2
+                CATRigRArmPalm
+                  CATRigRArmDigit11
+          CATRigSpine
+            CATRigHub003
+              CATRigHub003Bone001
+              CATRigHub003Bone002
+              CATRigHub003Bone003
+  SF_Zombie_04_LOD0
+  SF_Zombie_04_LOD1
+  SF_Zombie_04_LOD2
+
+avatar already humanoid
+SF_Zombie_05.prefab
+SF_Zombie_05
+  CATRigHub001
+    CATRigLLeg1
+      CATRigLLeg2
+        CATRigLLegAnkle
+          CATRigLLegDigit11
+    CATRigRLeg1
+      CATRigRLeg2
+        CATRigRLegAnkle
+          CATRigRLegDigit11
+    CATRigSpine1
+      CATRigSpine2
+        CATRigHub002
+          CATRigLArmCollarbone
+            CATRigLArm1
+              CATRigLArm2
+                CATRigLArmPalm
+                  CATRigLArmDigit11
+          CATRigRArmCollarbone
+            CATRigRArm1
+              CATRigRArm2
+                CATRigRArmPalm
+                  CATRigRArmDigit11
+          CATRigSpine
+            CATRigHub004
+              CATRigHub004Bone001
+              CATRigHub004Bone002
+              CATRigHub004Bone003
+  SF_Zombie_05_LOD0
+  SF_Zombie_05_LOD1
+  SF_Zombie_05_LOD2
+
+avatar already humanoid
+SF_Zombie_06.prefab
+SF_Zombie_06
+  CATRigHub001
+    CATRigLLeg1
+      CATRigLLeg2
+        CATRigLLegAnkle
+          CATRigLLegDigit11
+    CATRigRLeg1
+      CATRigRLeg2
+        CATRigRLegAnkle
+          CATRigRLegDigit11
+    CATRigSpine1
+      CATRigSpine2
+        CATRigHub002
+          CATRigLArmCollarbone
+            CATRigLArm1
+              CATRigLArm2
+                CATRigLArmPalm
+                  CATRigLArmDigit11
+          CATRigRArmCollarbone
+            CATRigRArm1
+              CATRigRArm2
+                CATRigRArmPalm
+                  CATRigRArmDigit11
+          CATRigSpine
+            CATRigHub003
+              CATRigHub003Bone001
+              CATRigHub003Bone002
+              CATRigHub003Bone003
+  SF_Zombie_06_LOD0
+  SF_Zombie_06_LOD1
+  SF_Zombie_06_LOD2
+
+avatar already humanoid
+configured SF_Zombie_01.prefab
+configured SF_Zombie_02.prefab
+configured SF_Zombie_03.prefab
+configured SF_Zombie_04.prefab
+configured SF_Zombie_05.prefab
+configured SF_Zombie_06.prefab
+all six HD zombie prefabs are ready

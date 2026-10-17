@@ -1,0 +1,4 @@
+avatar created
+hips root.x
+head head.x
+built Assets/GraveyardTerror/Prefabs/Boogeyman.prefab

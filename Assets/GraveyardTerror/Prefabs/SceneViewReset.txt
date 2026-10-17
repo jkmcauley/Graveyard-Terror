@@ -1,0 +1,2 @@
+before near 0.01282406 far 2564.813 pos (595.80, 14.28, 356.87) dynamic True mode Textured
+reset lookAt (589.22, 18.00, 355.69)

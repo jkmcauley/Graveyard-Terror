@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 401880f3d2633b74ba2f2bf1aaf34f89
+timeCreated: 1493058967
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89024
+  packageName: PBR Flamethrower Pistol
+  packageVersion: 1.0
+  assetPath: Assets/Flamethrower Pistol/Scene/New Post-Processing Profile.asset
+  uploadId: 176364

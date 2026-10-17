@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c932c493c8a564e4391b041e239039fb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Sleep_Vertical_Start.controller
+  uploadId: 517650

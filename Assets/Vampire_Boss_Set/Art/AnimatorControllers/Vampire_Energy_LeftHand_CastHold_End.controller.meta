@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d6a1df9c534a6004b96659b3c5eabb88
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Energy_LeftHand_CastHold_End.controller
+  uploadId: 517650

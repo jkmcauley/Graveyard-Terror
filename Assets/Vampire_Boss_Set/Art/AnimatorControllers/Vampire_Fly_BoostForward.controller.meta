@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fc093ad080651dc4697f09451e5b1fcd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Fly_BoostForward.controller
+  uploadId: 517650

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 5f2cc44206f233743999e9eea54be07a
+timeCreated: 1493132634
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89024
+  packageName: PBR Flamethrower Pistol
+  packageVersion: 1.0
+  assetPath: Assets/Flamethrower Pistol/flamegun.prefab
+  uploadId: 176364

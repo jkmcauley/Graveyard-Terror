@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 83a66448a525e3645b2ab25ee34a9578
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Attack_RightUnderswing.controller
+  uploadId: 517650

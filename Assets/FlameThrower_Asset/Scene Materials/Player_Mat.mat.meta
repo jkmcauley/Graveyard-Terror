@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 990acae985b6b534094a11297609938b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Scene Materials/Player_Mat.mat
+  uploadId: 486306

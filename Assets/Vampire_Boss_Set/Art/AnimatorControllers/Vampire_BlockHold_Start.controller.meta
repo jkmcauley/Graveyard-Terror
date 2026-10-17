@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2f6b6b128106f514cbf486986e913bff
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_BlockHold_Start.controller
+  uploadId: 517650

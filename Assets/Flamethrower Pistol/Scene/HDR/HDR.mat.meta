@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d053522f53c60724783e18d108bd246b
+timeCreated: 1493070059
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89024
+  packageName: PBR Flamethrower Pistol
+  packageVersion: 1.0
+  assetPath: Assets/Flamethrower Pistol/Scene/HDR/HDR.mat
+  uploadId: 176364

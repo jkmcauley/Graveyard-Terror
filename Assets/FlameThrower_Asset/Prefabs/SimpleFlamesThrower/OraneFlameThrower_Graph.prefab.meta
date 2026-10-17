@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 598613a891a0b7a4c97581170270cd87
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Prefabs/SimpleFlamesThrower/OraneFlameThrower_Graph.prefab
+  uploadId: 486306

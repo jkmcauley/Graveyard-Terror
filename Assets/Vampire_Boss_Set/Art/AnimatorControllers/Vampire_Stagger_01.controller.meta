@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13d0b321080237a4b93e1b8cacaf25c4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Stagger_01.controller
+  uploadId: 517650

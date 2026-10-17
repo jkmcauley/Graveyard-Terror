@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb2287c378078574b99fa859595f1e42
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Idle_Standing_Greet.controller
+  uploadId: 517650

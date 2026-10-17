@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2b517848d86e3cd4b9b7485133ae6fa6
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Scenes/DemoScene.unity
+  uploadId: 486306

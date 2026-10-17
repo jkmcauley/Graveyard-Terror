@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eeeb6a1197621fc4199694a65aa2fcaf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Float_Move_BackRight.controller
+  uploadId: 517650

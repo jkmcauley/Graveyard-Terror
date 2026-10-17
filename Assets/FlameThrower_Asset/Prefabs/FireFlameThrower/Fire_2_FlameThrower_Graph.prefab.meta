@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c701e72a9e735df45a6db22c3be22ac9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Prefabs/FireFlameThrower/Fire_2_FlameThrower_Graph.prefab
+  uploadId: 486306

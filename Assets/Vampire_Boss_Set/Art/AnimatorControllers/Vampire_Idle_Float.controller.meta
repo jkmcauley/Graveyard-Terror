@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a3b8e669c2d204540bd377df3e8cb329
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Idle_Float.controller
+  uploadId: 517650

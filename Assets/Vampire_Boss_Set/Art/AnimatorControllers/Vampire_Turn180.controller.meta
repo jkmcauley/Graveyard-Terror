@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5f4095fb5cbb33844a829a53fcc90aa7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Turn180.controller
+  uploadId: 517650

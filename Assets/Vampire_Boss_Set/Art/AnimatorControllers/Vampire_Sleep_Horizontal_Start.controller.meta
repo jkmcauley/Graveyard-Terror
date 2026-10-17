@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ff4d0a2404244e24a9fe48b33c31ae91
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Sleep_Horizontal_Start.controller
+  uploadId: 517650

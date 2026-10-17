@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ff24359e4beef4c40ac9f37a9fdc340e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Scripts/FlameThrowerVfx.cs
+  uploadId: 486306

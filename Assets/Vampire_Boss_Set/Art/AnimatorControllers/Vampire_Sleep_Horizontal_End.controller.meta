@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e64f0ee9f11368f41a564f29091276c6
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Vampire_Sleep_Horizontal_End.controller
+  uploadId: 517650

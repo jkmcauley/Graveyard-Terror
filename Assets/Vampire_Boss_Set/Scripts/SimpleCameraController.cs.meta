@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 6b3efcfd511f6f44facb21e9833f96ce
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Scripts/SimpleCameraController.cs
+  uploadId: 517650

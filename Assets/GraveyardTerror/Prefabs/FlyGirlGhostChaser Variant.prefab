@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &937932279964730375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 644.898
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.411
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 356.515
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9985639
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.05357491
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -6.142
+      objectReference: {fileID: 0}
+    - target: {fileID: 8302824759502558823, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679104488889879773, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      propertyPath: m_Name
+      value: FlyGirlGhostChaser Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8679104488889879773, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5079594531974252147}
+    - targetCorrespondingSourceObject: {fileID: 8679104488889879773, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 451462908002487854}
+    - targetCorrespondingSourceObject: {fileID: 8679104488889879773, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4632132805595354714}
+  m_SourcePrefab: {fileID: 100100000, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+--- !u!1 &8464071280007317722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8679104488889879773, guid: 2cef716b039bf604d9b741dd2c07958c, type: 3}
+  m_PrefabInstance: {fileID: 937932279964730375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5079594531974252147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464071280007317722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4da8cd8792c964570a7df4adab6fe67f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FlyGirlGhostChaser
+  _player: {fileID: 0}
+  _playerHealth: {fileID: 0}
+  _ghostHealth: {fileID: 4632132805595354714}
+  _detectRange: 12
+  _attackRange: 2
+  _moveSpeed: 3
+  _bobAmount: 0.25
+  _bobSpeed: 2
+  _damage: 10
+  _attackCooldown: 2
+--- !u!136 &451462908002487854
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464071280007317722}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.20806885
+  m_Height: 1.817081
+  m_Direction: 1
+  m_Center: {x: -0.04083252, y: 0.94809794, z: -0.08642578}
+--- !u!114 &4632132805595354714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464071280007317722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df34d8deeee11f64aaa8afbba5c2a724, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UHFPS.Runtime.NPCHealth
+  IsDead: 0
+  BodySegments: []
+  DisableComponents: []
+  Hips: {fileID: 0}
+  Head: {fileID: 0}
+  BodyPartLayer:
+    index: 0
+  MaxHealth: 100
+  StartHealth: 100
+  HeadshotMultiplier: 2
+  AllowHeadhsot: 1
+  RemoveCorpse: 0
+  DisableCorpse: 0
+  CorpseRemoveTime: 10
+  DamageSounds: []
+  DamageVolume: 1
+  DeathSound:
+    audioClip: {fileID: 0}
+    volume: 0
+  OnTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCorpseRemove:
+    m_PersistentCalls:
+      m_Calls: []

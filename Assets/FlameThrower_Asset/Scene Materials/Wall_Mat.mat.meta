@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 85c40e5ac21d3774db3a5262ea41abf8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Scene Materials/Wall_Mat.mat
+  uploadId: 486306

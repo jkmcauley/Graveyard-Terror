@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 23085c748ed6e80469e0a115d0e89ec5
+timeCreated: 1493091945
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 89024
+  packageName: PBR Flamethrower Pistol
+  packageVersion: 1.0
+  assetPath: Assets/Flamethrower Pistol/Materials/Flamethrowerpistol.mat
+  uploadId: 176364

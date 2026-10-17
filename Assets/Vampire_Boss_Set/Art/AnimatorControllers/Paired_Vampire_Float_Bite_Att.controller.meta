@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 35d8b9be5c4e9ae4a9c8125a5c950ad8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Paired_Vampire_Float_Bite_Att.controller
+  uploadId: 517650

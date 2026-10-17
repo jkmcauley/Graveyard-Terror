@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c3935bd8a7a2efc4ca2f799201fc4ea7
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 227375
+  packageName: Vampire Boss Set
+  packageVersion: 1.0
+  assetPath: Assets/Vampire_Boss_Set/Art/AnimatorControllers/Paired_Vampire_Bite_Behind_Vic.controller
+  uploadId: 517650

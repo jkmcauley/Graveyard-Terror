@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 837fb4d2dc6954c42a0218f7a9e2dfc3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Prefabs/HealingFlameThrower/Healing_3_FlameThrower_Graph.prefab
+  uploadId: 486306

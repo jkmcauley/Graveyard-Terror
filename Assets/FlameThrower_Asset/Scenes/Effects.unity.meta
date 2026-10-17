@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 05b864fb125d33241ba10fc2dded47d9
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 215770
+  packageName: Flamethrower VFX Graph (URP & HDRP)
+  packageVersion: 1.0
+  assetPath: Assets/FlameThrower_Asset/Scenes/Effects.unity
+  uploadId: 486306
