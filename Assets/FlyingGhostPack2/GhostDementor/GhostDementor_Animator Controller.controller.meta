@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c2eb2328989bcb4ea2fcde56ab6953d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 335274
+  packageName: Flying Ghost Pack2
+  packageVersion: 1.0
+  assetPath: Assets/FlyingGhostPack2/GhostDementor/GhostDementor_Animator Controller.controller
+  uploadId: 793306

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8afa604d715675543990019b82c98527
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  preprocessorOverride: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 335274
+  packageName: Flying Ghost Pack2
+  packageVersion: 1.0
+  assetPath: Assets/FlyingGhostPack2/GhostDementor/Shader/DoubleSided.shader
+  uploadId: 793306
