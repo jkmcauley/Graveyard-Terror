@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c99e537d3d103d54e8a376d31b8f1baf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/Common/Mesh/Materials/mi_Water_01_02_opaque.mat
+  uploadId: 953640

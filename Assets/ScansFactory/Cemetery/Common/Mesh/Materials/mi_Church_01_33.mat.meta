@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 92b0b54b73a155b43b5a4ef49062e294
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/Common/Mesh/Materials/mi_Church_01_33.mat
+  uploadId: 953640

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 414484113f2cd7740bddb304ec0db45a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/URP/Shaders_URP/SF_Base_TransparentGlass_URP.shadergraph
+  uploadId: 953640

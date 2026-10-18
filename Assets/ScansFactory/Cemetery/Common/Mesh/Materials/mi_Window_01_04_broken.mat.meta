@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2b5be7bc11e095e4681d0175e285fc5e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/Common/Mesh/Materials/mi_Window_01_04_broken.mat
+  uploadId: 953640

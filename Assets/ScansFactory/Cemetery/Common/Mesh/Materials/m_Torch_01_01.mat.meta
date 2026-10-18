@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 309aff101202acb4fbe1038f47ddb062
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/Common/Mesh/Materials/m_Torch_01_01.mat
+  uploadId: 953640

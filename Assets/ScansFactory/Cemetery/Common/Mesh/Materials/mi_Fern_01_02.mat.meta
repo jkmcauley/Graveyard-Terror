@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bbdc09f3f7eaaa849b6479d60e424225
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/Common/Mesh/Materials/mi_Fern_01_02.mat
+  uploadId: 953640

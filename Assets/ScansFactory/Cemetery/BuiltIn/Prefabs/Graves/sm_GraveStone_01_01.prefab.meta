@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8ff08b31024b4196b48eccd3f56e5846
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/BuiltIn/Prefabs/Graves/sm_GraveStone_01_01.prefab
+  uploadId: 953640

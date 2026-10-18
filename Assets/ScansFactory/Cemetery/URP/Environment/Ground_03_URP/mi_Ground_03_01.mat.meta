@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d810591bc3f64af46a71ac9fb45ecc73
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 336004
+  packageName: Cemetery - Forgotten Churchyard
+  packageVersion: 1.1
+  assetPath: Assets/ScansFactory/Cemetery/URP/Environment/Ground_03_URP/mi_Ground_03_01.mat
+  uploadId: 953640
