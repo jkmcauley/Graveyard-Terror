@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
@@ -377,6 +378,10 @@ namespace UHFPS.Runtime
                 }
             }
 
+            // A loaded save restores the old shortcuts and skips starting items.
+            // Fill only slots that are still empty, so keys 1-3 keep flashlight, pistol, and Ossabite.
+            StartCoroutine(BindEmptyStartingShortcuts());
+
             foreach (var control in ControlsContexts)
             {
                 control.SubscribeGloc();
@@ -384,6 +389,30 @@ namespace UHFPS.Runtime
 
             promptSettings.shortcutPrompt.SubscribeGlocMany();
             promptSettings.combinePrompt.SubscribeGloc();
+        }
+
+        private IEnumerator BindEmptyStartingShortcuts()
+        {
+            // SaveGameManager.Start restores shortcuts in the same frame. Wait until that finishes.
+            yield return null;
+
+            foreach (var item in startingItems)
+            {
+                if (!item.setShortcut)
+                    continue;
+
+                int index = item.shortcutKey;
+                if (index < 0 || index >= shortcuts.Length)
+                    continue;
+
+                if (shortcuts[index].item != null)
+                    continue;
+
+                if (ContainsItem(item.GUID, out OccupyData occupy))
+                    SetShortcut(index, occupy.inventoryItem);
+                else if (!AddItem(item.GUID, item.quantity, item.shortcutKey, item.data))
+                    Debug.LogWarning($"[Inventory] Shortcut {index + 1} is empty. No space for {item.title}.");
+            }
         }
 
         private void Update()
@@ -732,6 +761,7 @@ namespace UHFPS.Runtime
                     // add item to inventory space
                     carryingItems.Add(inventoryItem, null);
                     OnItemAdded.OnNext(new(guid, quantity));
+                    RestoreParkedShortcut(inventoryItem);
                 }
 
                 // set item parent to the inventory panel transform
@@ -747,6 +777,7 @@ namespace UHFPS.Runtime
                 {
                     // remove item from the inventory space
                     carryingItems.Remove(inventoryItem);
+                    ParkShortcut(inventoryItem);
                     RemoveShortcut(inventoryItem);
 
                     // add item to container space
@@ -1166,16 +1197,22 @@ namespace UHFPS.Runtime
             StorableCollection shortcutsSave = new StorableCollection();
 
             int index = 0;
-            foreach (var item in carryingItems)
+            if (carryingItems != null)
             {
-                itemsToSave.Add("item_" + index++, new StorableCollection()
+                foreach (var item in carryingItems)
                 {
-                    { "item", item.Key.ItemGuid },
-                    { "quantity", item.Key.Quantity },
-                    { "orientation", item.Key.orientation },
-                    { "position", item.Key.Position.ToSaveable() },
-                    { "customData", item.Key.CustomData?.GetJson() },
-                });
+                    if (item.Key == null)
+                        continue;
+
+                    itemsToSave.Add("item_" + index++, new StorableCollection()
+                    {
+                        { "item", item.Key.ItemGuid },
+                        { "quantity", item.Key.Quantity },
+                        { "orientation", item.Key.orientation },
+                        { "position", item.Key.Position.ToSaveable() },
+                        { "customData", item.Key.CustomData?.GetJson() },
+                    });
+                }
             }
 
             shortcutsSave.Add("shortcut_0", shortcuts[0].item != null ? shortcuts[0].item.ItemGuid : "{}");

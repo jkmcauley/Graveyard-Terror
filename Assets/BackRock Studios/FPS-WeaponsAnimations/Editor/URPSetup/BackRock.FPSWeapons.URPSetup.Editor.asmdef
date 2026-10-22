@@ -1,0 +1,29 @@
+{
+    "name": "BackRock.FPSWeapons.URPSetup.Editor",
+    "rootNamespace": "BackRock.Editor",
+    "references": [
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Core.Editor",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.RenderPipelines.Universal.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "BACKROCK_FPSWEAPONS_URP"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "14.0.0",
+            "define": "BACKROCK_FPSWEAPONS_URP"
+        }
+    ],
+    "noEngineReferences": false
+}

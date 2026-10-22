@@ -14,6 +14,7 @@ namespace UHFPS.Runtime
         {
             public ShortcutSlot slot;
             public InventoryItem item;
+            public string guid;
         }
 
         private InventoryItem activeItem;
@@ -22,6 +23,7 @@ namespace UHFPS.Runtime
 
         private readonly Shortcut[] shortcuts = new Shortcut[4];
         private readonly List<string> combinePartners = new();
+        private readonly Dictionary<string, int> parkedShortcuts = new();
 
         private bool bindShortcut;
         private bool itemSelector;
@@ -58,9 +60,11 @@ namespace UHFPS.Runtime
                         SetShortcut(i);
                         bindShortcut = false;
                     }
-                    else if (shortcuts[i].item != null && !gameManager.IsInventoryShown && PlayerItems.CanInteract)
+                    else if (!gameManager.IsInventoryShown && PlayerItems.CanInteract)
                     {
-                        UseItem(shortcuts[i].item);
+                        InventoryItem shortcutItem = LiveShortcut(i);
+                        if (shortcutItem != null)
+                            UseItem(shortcutItem);
                     }
                     break;
                 }
@@ -316,6 +320,7 @@ namespace UHFPS.Runtime
             if(shortcuts[index].item == activeItem)
             {
                 shortcuts[index].item = null;
+                shortcuts[index].guid = null;
                 shortcuts[index].slot.SetItem(null);
             }
             else
@@ -325,6 +330,7 @@ namespace UHFPS.Runtime
 
                 // bind to a new slot
                 shortcuts[index].item = activeItem;
+                shortcuts[index].guid = activeItem != null ? activeItem.ItemGuid : null;
                 shortcuts[index].slot.SetItem(activeItem);
             }
 
@@ -337,6 +343,7 @@ namespace UHFPS.Runtime
         private void SetShortcut(int index, InventoryItem item)
         {
             shortcuts[index].item = item;
+            shortcuts[index].guid = item != null ? item.ItemGuid : null;
             shortcuts[index].slot.SetItem(item);
         }
 
@@ -347,10 +354,73 @@ namespace UHFPS.Runtime
                 if (shortcuts[i].item == item)
                 {
                     shortcuts[i].item = null;
+                    shortcuts[i].guid = null;
                     shortcuts[i].slot.SetItem(null);
                     break;
                 }
             }
+        }
+
+        private int ShortcutIndex(InventoryItem item)
+        {
+            for (int i = 0; i < shortcuts.Length; i++)
+            {
+                if (shortcuts[i].item == item)
+                    return i;
+            }
+
+            return -1;
+        }
+
+        // Moving a weapon into a chest clears its key. Remember the key so it comes back with the item.
+        public void ParkShortcut(InventoryItem item)
+        {
+            int index = ShortcutIndex(item);
+            if (index < 0 || item == null || string.IsNullOrEmpty(item.ItemGuid))
+                return;
+
+            parkedShortcuts[item.ItemGuid] = index;
+        }
+
+        public void RestoreParkedShortcut(InventoryItem item)
+        {
+            if (item == null || item.isContainerItem || string.IsNullOrEmpty(item.ItemGuid))
+                return;
+            if (!parkedShortcuts.TryGetValue(item.ItemGuid, out int index))
+                return;
+
+            parkedShortcuts.Remove(item.ItemGuid);
+            if (index < 0 || index >= shortcuts.Length)
+                return;
+            if (shortcuts[index].item != null && shortcuts[index].item != item)
+                return;
+
+            SetShortcut(index, item);
+        }
+
+        private InventoryItem LiveShortcut(int index)
+        {
+            InventoryItem bound = shortcuts[index].item;
+            if (bound != null && !bound.isContainerItem && carryingItems.ContainsKey(bound))
+                return bound;
+
+            string guid = shortcuts[index].guid;
+            if (string.IsNullOrEmpty(guid) && bound != null)
+                guid = bound.ItemGuid;
+            if (string.IsNullOrEmpty(guid))
+                return null;
+
+            foreach (var carried in carryingItems)
+            {
+                InventoryItem candidate = carried.Key;
+                if (candidate == null || candidate.isContainerItem || candidate.ItemGuid != guid)
+                    continue;
+
+                SetShortcut(index, candidate);
+                return candidate;
+            }
+
+            return null;
         }
 
         public void ExamineItem()

@@ -95,6 +95,9 @@ namespace UHFPS.Runtime
             if (GameTools.Raycast(playerAim, out RaycastHit hit, RaycastRange, CullLayers, InteractLayer))
             {
                 raycastObject = hit.collider.gameObject;
+                InteractableItem carriedItem = hit.collider.GetComponentInParent<InteractableItem>();
+                if (carriedItem != null)
+                    raycastObject = carriedItem.gameObject;
 
                 if (!isHolding)
                 {
@@ -395,14 +398,40 @@ namespace UHFPS.Runtime
 
                 if (interactable.InteractableType == InteractableTypeEnum.InventoryItem)
                 {
-                    isAddedToInventory = inventory.AddItem(interactable.PickupItem.GUID, interactable.Quantity, interactable.ItemCustomData, out var addedItem);
-                    if (isAddedToInventory)
+                    string guid = interactable.PickupItem.GUID;
+                    // The crossbow is one weapon. A second pickup must not create another icon.
+                    Inventory.OccupyData carried = default;
+                    bool alreadyCarried = guid == "c4b0a11e8f2d4a6b9e1c7d5a3f8b2041"
+                        && inventory.ContainsItem(guid, out carried)
+                        && carried.inventoryItem != null;
+
+                    InventoryItem addedItem = null;
+                    if (alreadyCarried)
                     {
-                        if (interactable.AutoShortcut)
+                        isAddedToInventory = true;
+                        addedItem = carried.inventoryItem;
+                    }
+                    else
+                    {
+                        isAddedToInventory = inventory.AddItem(guid, interactable.Quantity, interactable.ItemCustomData, out addedItem);
+                        if (!isAddedToInventory)
+                        {
+                            inventory.ExpandInventory(1, true);
+                            isAddedToInventory = inventory.AddItem(guid, interactable.Quantity, interactable.ItemCustomData, out addedItem);
+                        }
+                    }
+
+                    if (isAddedToInventory && addedItem != null)
+                    {
+                        if (interactable.AutoShortcut && !alreadyCarried)
                             shortcutId = inventory.AutoShortcut(addedItem);
 
                         if (interactable.AutoEquip && addedItem.Item.Settings.isUsable && addedItem.Item.UsableSettings.usableType == UsableType.PlayerItem)
-                            inventory.UseItem(addedItem, false);
+                        {
+                            int itemIndex = addedItem.Item.UsableSettings.playerItemIndex;
+                            if (inventory.PlayerItems.CurrentItemIndex != itemIndex)
+                                inventory.UseItem(addedItem, false);
+                        }
                     }
                 }
 
@@ -419,15 +448,11 @@ namespace UHFPS.Runtime
                         string pickupText = ShowLootedText ? LootText + " " + interactable.ItemName : interactable.ItemName;
                         if (shortcutId >= 0) pickupText += $"\nPress {shortcutId + 1} to Equip";
 
-                        if (ShowDefaultPickupIcon)
-                        {
-                            gameManager.ShowItemPickupMessage(pickupText, DefaultPickupIcon, interactable.MessageTime);
-                        }
-                        else
-                        {
-                            var pickupIcon = interactable.PickupItem.GetItem().Icon;
+                        Sprite pickupIcon = ShowDefaultPickupIcon ? DefaultPickupIcon : interactable.PickupItem.GetItem()?.Icon;
+                        if (pickupIcon == null)
+                            pickupIcon = inventory.slotSettings.missingItemSprite;
+                        if (pickupIcon != null)
                             gameManager.ShowItemPickupMessage(pickupText, pickupIcon, interactable.MessageTime);
-                        }
                     }
                     else if (interactable.MessageType == MessageTypeEnum.Hint)
                     {

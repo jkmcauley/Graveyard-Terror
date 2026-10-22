@@ -53,6 +53,9 @@ public class Vampire : MonoBehaviour
     [SerializeField] float _turnSpeed = 240f;
     [SerializeField] int _clawDamage = 4;
     [SerializeField] int _grabDamage = 6;
+    [SerializeField] AudioClip _monsterGrowl;
+
+    AudioSource _growlSource;
 
     int _speed;
     int _hitsLanded;
@@ -270,6 +273,7 @@ public class Vampire : MonoBehaviour
     {
         if (_dying)
         {
+            StopGrowl();
             if (DeathFinished())
                 DropRagdoll();
             return;
@@ -336,6 +340,7 @@ public class Vampire : MonoBehaviour
 
     void UpdateChase(Transform player)
     {
+        StopGrowl();
         _state = VampireState.Chase;
         _attackVisible = false;
         _agent.updateRotation = true;
@@ -375,6 +380,7 @@ public class Vampire : MonoBehaviour
 
     void BeginTravel()
     {
+        StopGrowl();
         _state = VampireState.Travel;
         _attackVisible = false;
         _agent.updateRotation = true;
@@ -537,6 +543,35 @@ public class Vampire : MonoBehaviour
                 ClawRight();
                 break;
         }
+
+        PlayGrowl();
+    }
+
+    void PlayGrowl()
+    {
+        if (_monsterGrowl == null)
+            return;
+
+        if (_growlSource == null)
+        {
+            _growlSource = gameObject.AddComponent<AudioSource>();
+            _growlSource.spatialBlend = 1f;
+            _growlSource.playOnAwake = false;
+            _growlSource.loop = false;
+            _growlSource.minDistance = 2f;
+            _growlSource.maxDistance = 18f;
+            _growlSource.volume = 0.7f;
+        }
+
+        _growlSource.Stop();
+        _growlSource.clip = _monsterGrowl;
+        _growlSource.Play();
+    }
+
+    void StopGrowl()
+    {
+        if (_growlSource != null && _growlSource.isPlaying)
+            _growlSource.Stop();
     }
 
     void TryDamagePlayer(Transform player, float distance, float angle)
@@ -669,6 +704,7 @@ public class Vampire : MonoBehaviour
             return;
 
         _dying = true;
+        StopGrowl();
         if (_engaged == this)
             _engaged = null;
         _deathWait = 0f;

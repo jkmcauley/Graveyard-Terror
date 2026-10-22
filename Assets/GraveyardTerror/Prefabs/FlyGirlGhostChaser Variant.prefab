@@ -93,6 +93,7 @@ MonoBehaviour:
   _bobSpeed: 2
   _damage: 10
   _attackCooldown: 2
+  _whisper: {fileID: 8300000, guid: 438cce2dd176e4187a916acc1b0480fd, type: 3}
 --- !u!136 &451462908002487854
 CapsuleCollider:
   m_ObjectHideFlags: 0

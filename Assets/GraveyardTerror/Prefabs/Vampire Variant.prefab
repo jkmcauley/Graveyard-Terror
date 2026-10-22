@@ -1324,6 +1324,7 @@ MonoBehaviour:
   _turnSpeed: 240
   _clawDamage: 4
   _grabDamage: 6
+  _monsterGrowl: {fileID: 8300000, guid: 12048456105d4424c830eabb71506362, type: 3}
 --- !u!195 &1214086123174059448
 NavMeshAgent:
   m_ObjectHideFlags: 0

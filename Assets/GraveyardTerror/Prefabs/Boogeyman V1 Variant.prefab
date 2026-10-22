@@ -2152,3 +2152,4 @@ MonoBehaviour:
   _turnSpeed: 240
   _clawDamage: 4
   _grabDamage: 6
+  _monsterGrowl: {fileID: 8300000, guid: 55a0f354e24654a7a9ad1bd81c9facc9, type: 3}

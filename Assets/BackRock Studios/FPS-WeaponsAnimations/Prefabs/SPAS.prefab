@@ -1,0 +1,3179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &26214502689344139
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6577946230562232869}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandMiddle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6577946230562232869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26214502689344139}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.65902126, y: -0.012366236, z: -0.014108885, w: 0.7518903}
+  m_LocalPosition: {x: -0.0067052823, y: 0.06127777, z: -0.00234726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2761675235655868195}
+  m_Father: {fileID: 6818029339029318416}
+  m_LocalEulerAnglesHint: {x: 82.16907, y: -15.84103, z: -15.982563}
+--- !u!1 &393426343827230552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451540333553498081}
+  - component: {fileID: 1017748391220751057}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Shotgun_2:Bullet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1451540333553498081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393426343827230552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6718488650534843505}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &1017748391220751057
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393426343827230552}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: b6fcb3137bac7204d82bb67f9889f555, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: -4300571688251647398, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_Bones:
+  - {fileID: 4156829968918549904}
+  - {fileID: 511652219270885277}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 4156829968918549904}
+  m_AABB:
+    m_Center: {x: -0.000000007916242, y: -0.000071117654, z: -0.00010667648}
+    m_Extent: {x: 0.006177991, y: 0.017068028, z: 0.006177989}
+  m_DirtyAABB: 0
+--- !u!1 &418941467772217439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2500111533118329380}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandRing2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2500111533118329380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418941467772217439}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0015522473, y: 0.0039253635, z: -0.0011764739, w: 0.9999904}
+  m_LocalPosition: {x: 0.000008643948, y: 0.013881812, z: 2.655801e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2907489039015657469}
+  m_Father: {fileID: 8010412294636127853}
+  m_LocalEulerAnglesHint: {x: -0.17734413, y: 0.4500251, z: -0.1355116}
+--- !u!1 &493355239609975620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3054606774495017755}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandIndex3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3054606774495017755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493355239609975620}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.29400343, y: 8.290282e-19, z: -2.5500732e-19, w: 0.9558044}
+  m_LocalPosition: {x: -0.000014428384, y: 0.014495412, z: 5.239311e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7040900695070207214}
+  m_Father: {fileID: 5769362386387777746}
+  m_LocalEulerAnglesHint: {x: 34.19558, y: 1.0403319e-16, z: 3.7484454e-24}
+--- !u!1 &512477143692747951
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3797475575543388666}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:FK_RightHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3797475575543388666
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512477143692747951}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.10520842, y: 0.036985908, z: -0.062956505, w: 0.991766}
+  m_LocalPosition: {x: 4.61382e-10, y: 0.11211179, z: -0.000000001728782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6988938416247001190}
+  m_LocalEulerAnglesHint: {x: 12.31823, y: 3.5277653, z: -6.883622}
+--- !u!1 &1047373679199270981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9174592480394574304}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:joint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9174592480394574304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1047373679199270981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.9968027e-17, y: 0.00076531223, z: 0.07232424}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 271480808910338873}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1070436848773188769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4156930232938729635}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandThumb2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4156930232938729635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070436848773188769}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.06401473, y: -0.02173007, z: 0.32070413, w: 0.9447639}
+  m_LocalPosition: {x: -0.0017580208, y: 0.019563928, z: -5.4382493e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3942593442411710885}
+  m_Father: {fileID: 1867780394610328523}
+  m_LocalEulerAnglesHint: {x: 7.752575, y: 0.0000006764109, z: 37.499996}
+--- !u!1 &1174492088807733756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4435321733495260875}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandMiddle3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4435321733495260875
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174492088807733756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.46195734, y: 3.07706e-18, z: -1.6027365e-18, w: 0.88690215}
+  m_LocalPosition: {x: 0.000033542034, y: 0.015539197, z: 2.6761185e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 547424999331671620}
+  m_Father: {fileID: 2761675235655868195}
+  m_LocalEulerAnglesHint: {x: 55.026962, y: 4.1613254e-16, z: 0}
+--- !u!1 &1208776603828120001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2860520182251572659}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandRing1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2860520182251572659
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208776603828120001}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.41484022, y: 0.0044880193, z: 0.009843148, w: 0.90983003}
+  m_LocalPosition: {x: -0.006977325, y: 0.06258233, z: -0.0020616225}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5179415355466726088}
+  m_Father: {fileID: 8029672585081894547}
+  m_LocalEulerAnglesHint: {x: 63.20692, y: 2.536297, z: 2.8316941}
+--- !u!1 &1419028924136153489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1363357392309608136}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:FK_LeftArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1363357392309608136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419028924136153489}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.014097886, y: 0.0002759513, z: -0.019568255, w: 0.9997091}
+  m_LocalPosition: {x: -1.3586754e-10, y: 0.0601086, z: 9.2422975e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2501113584294806797}
+  m_Father: {fileID: 3801574218345840957}
+  m_LocalEulerAnglesHint: {x: -1.6146237, y: 0.06325021, z: -2.243614}
+--- !u!1 &1471073545478904501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5179415355466726088}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandRing2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5179415355466726088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471073545478904501}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.41520178, y: -3.1562578e-18, z: 1.4405206e-18, w: 0.90972936}
+  m_LocalPosition: {x: -0.0000118519165, y: 0.013311569, z: 0.0000000010177692}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8075440283109348502}
+  m_Father: {fileID: 2860520182251572659}
+  m_LocalEulerAnglesHint: {x: 63.27686, y: -2.8306936e-16, z: 3.4911456e-23}
+--- !u!1 &1685724923609014832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7054927043828260023}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:IK_LeftForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7054927043828260023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685724923609014832}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0015057748, y: 0.0018673227, z: -0.46718085, w: 0.88415855}
+  m_LocalPosition: {x: 2.1868544e-10, y: 0.13446909, z: -4.6563528e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 17314250046139427}
+  m_Father: {fileID: 5204681730079465168}
+  m_LocalEulerAnglesHint: {x: 0.23803559, y: 0.1363855, z: -48.274532}
+--- !u!1 &1784216308159058305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2935395494231584995}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandMiddle3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2935395494231584995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784216308159058305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.29091725, y: -1.009322e-18, z: -3.3193873e-18, w: 0.95674825}
+  m_LocalPosition: {x: -0.0000023632801, y: 0.014992801, z: -6.8920725e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4666373586445441374}
+  m_Father: {fileID: 4675677936367615941}
+  m_LocalEulerAnglesHint: {x: 48.03859, y: -3.079725e-16, z: -4.235775e-16}
+--- !u!1 &2000622565137849346
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3942593442411710885}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandThumb3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3942593442411710885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000622565137849346}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.10975081, y: 0.03145355, z: -0.42752957, w: 0.896763}
+  m_LocalPosition: {x: 0.000072219394, y: 0.018495299, z: 4.9745613e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4020699152190120686}
+  m_Father: {fileID: 4156930232938729635}
+  m_LocalEulerAnglesHint: {x: -9.784694, y: 8.770337, z: -51.73088}
+--- !u!1 &2173082158522681429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678610143053545060}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandThumb1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678610143053545060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2173082158522681429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.17640121, y: -0.041289784, z: -0.22419442, w: 0.9575566}
+  m_LocalPosition: {x: 0.012544675, y: 0.019559206, z: 0.008807948}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1680025978889250794}
+  m_Father: {fileID: 8029672585081894547}
+  m_LocalEulerAnglesHint: {x: 18.621471, y: -9.608139, z: -32.565617}
+--- !u!1 &2180620494173893568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1594371453192640026}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandIndex3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1594371453192640026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2180620494173893568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.09512387, y: 1.6501361e-19, z: 1.7268573e-18, w: 0.99546546}
+  m_LocalPosition: {x: -0.000014291127, y: 0.014547059, z: -1.1373117e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6882917764791330321}
+  m_Father: {fileID: 3197688289273619310}
+  m_LocalEulerAnglesHint: {x: 56.45835, y: 2.437032e-16, z: 3.4252784e-16}
+--- !u!1 &2446554550362188161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2761675235655868195}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandMiddle2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2761675235655868195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2446554550362188161}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.26016775, y: -4.513191e-19, z: -1.6749855e-18, w: 0.9655634}
+  m_LocalPosition: {x: -0.000018485784, y: 0.015365443, z: -1.8833646e-12}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4435321733495260875}
+  m_Father: {fileID: 6577946230562232869}
+  m_LocalEulerAnglesHint: {x: 30.16003, y: -1.2090325e-16, z: -2.406433e-16}
+--- !u!1 &2463798214714134691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3365115776986975296}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3365115776986975296
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2463798214714134691}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.001419788, y: -0.0012663617, z: 0.75613606, w: 0.6544117}
+  m_LocalPosition: {x: 1.2805251e-10, y: 0.13446088, z: 0.0000000015698836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6818029339029318416}
+  - {fileID: 3578556298003302391}
+  m_Father: {fileID: 7966110986304500412}
+  m_LocalEulerAnglesHint: {x: 0.252679, y: -0.09028018, z: 59.988693}
+--- !u!1 &2502701967993509850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3398651860637303661}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3398651860637303661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2502701967993509850}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.76157665, y: -0.24841626, z: -0.018693024, w: 0.5982817}
+  m_LocalPosition: {x: -1.3586754e-10, y: 0.0601086, z: 9.2422975e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3591817566865626358}
+  m_Father: {fileID: 3801574218345840957}
+  m_LocalEulerAnglesHint: {x: 65.033195, y: -69.797745, z: -117.27205}
+--- !u!1 &2509757698977124281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6561831597652695978}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:joint4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6561831597652695978
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2509757698977124281}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.325873e-17, y: 0.010142973, z: 0.4446703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 271480808910338873}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2766442323420046355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5622675377906919983}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:global_CTRL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5622675377906919983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766442323420046355}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00016536444, y: 0.046750907, z: -0.48691308}
+  m_LocalScale: {x: 2.2455947, y: 2.2455947, z: 2.2455947}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 211671798528437058}
+  m_Father: {fileID: 5569009580981651970}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2842968158415882291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3801574218345840957}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftShoulder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3801574218345840957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2842968158415882291}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.5274893, y: -0.39001316, z: 0.607861, w: 0.44738102}
+  m_LocalPosition: {x: -0.1615999, y: -0.06854244, z: 0.12552992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3398651860637303661}
+  - {fileID: 1363357392309608136}
+  - {fileID: 5204681730079465168}
+  m_Father: {fileID: 211671798528437058}
+  m_LocalEulerAnglesHint: {x: 71.107, y: 64.52169, z: 155.85786}
+--- !u!1 &2859420338415972363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5879774262730584857}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:FK_LeftHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5879774262730584857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2859420338415972363}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.1074598, y: -0.043799713, z: 0.061474383, w: 0.99134}
+  m_LocalPosition: {x: 4.3748102e-10, y: 0.11213085, z: -2.4387986e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2501113584294806797}
+  m_LocalEulerAnglesHint: {x: 12.617628, y: -4.327132, z: 6.618278}
+--- !u!1 &2899049673728244300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5030585928203897551}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandPinky1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5030585928203897551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2899049673728244300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.8037287, y: -0.027635235, z: -0.020424068, w: 0.59400284}
+  m_LocalPosition: {x: 0.018507337, y: 0.060047615, z: -0.00032508068}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7530076767705674049}
+  m_Father: {fileID: 6818029339029318416}
+  m_LocalEulerAnglesHint: {x: 72.4978, y: -167.38893, z: -166.79773}
+--- !u!1 &2915804707830220077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610927371552267017}
+  - component: {fileID: 3796458683438569499}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Mesh_polySurface31
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &610927371552267017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915804707830220077}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0000006866455, y: -0.00013124662, z: -0.014334025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3466528789788252403}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &3796458683438569499
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2915804707830220077}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 5907910600661452712, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: -1929377429026188084, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_Bones:
+  - {fileID: 6577946230562232869}
+  - {fileID: 2761675235655868195}
+  - {fileID: 4435321733495260875}
+  - {fileID: 5465598990806013714}
+  - {fileID: 5769362386387777746}
+  - {fileID: 4188228967039441690}
+  - {fileID: 7966110986304500412}
+  - {fileID: 3365115776986975296}
+  - {fileID: 6818029339029318416}
+  - {fileID: 3054606774495017755}
+  - {fileID: 4156930232938729635}
+  - {fileID: 1867780394610328523}
+  - {fileID: 3942593442411710885}
+  - {fileID: 8010412294636127853}
+  - {fileID: 5030585928203897551}
+  - {fileID: 2500111533118329380}
+  - {fileID: 7530076767705674049}
+  - {fileID: 6982715817865133294}
+  - {fileID: 2907489039015657469}
+  - {fileID: 4675677936367615941}
+  - {fileID: 2860520182251572659}
+  - {fileID: 5179415355466726088}
+  - {fileID: 8029672585081894547}
+  - {fileID: 8040166565049251689}
+  - {fileID: 2935395494231584995}
+  - {fileID: 3801574218345840957}
+  - {fileID: 3398651860637303661}
+  - {fileID: 3591817566865626358}
+  - {fileID: 96259999632924258}
+  - {fileID: 3197688289273619310}
+  - {fileID: 678610143053545060}
+  - {fileID: 1680025978889250794}
+  - {fileID: 3272741334048792279}
+  - {fileID: 2282119821549395744}
+  - {fileID: 1618050110859090097}
+  - {fileID: 1594371453192640026}
+  - {fileID: 724654890160758824}
+  - {fileID: 8075440283109348502}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 3801574218345840957}
+  m_AABB:
+    m_Center: {x: -0.10941406, y: -0.10155964, z: 0.12675555}
+    m_Extent: {x: 0.18744436, y: 0.2560139, z: 0.16251437}
+  m_DirtyAABB: 0
+--- !u!1 &3000143771686686030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7040900695070207214}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandIndex4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7040900695070207214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000143771686686030}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00000073370165, y: 0.0117602395, z: 6.344507e-11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3054606774495017755}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3195532484921318321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1351693603469167402}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:IK_RightForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1351693603469167402
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195532484921318321}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0014197862, y: -0.0012663635, z: 0.75613606, w: 0.6544117}
+  m_LocalPosition: {x: 1.2805249e-10, y: 0.13446088, z: 0.0000000015698836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4559401666177030321}
+  m_Father: {fileID: 8580570028226013803}
+  m_LocalEulerAnglesHint: {x: 0.25267902, y: -0.09028039, z: 59.988693}
+--- !u!1 &3252127760821433184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6882917764791330321}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandIndex4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6882917764791330321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3252127760821433184}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000020589807, y: 0.0113796275, z: 9.93336e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1594371453192640026}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3398676847668742660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8010412294636127853}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandRing1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8010412294636127853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398676847668742660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.8356667, y: -0.061652403, z: 0.026671134, w: 0.54511356}
+  m_LocalPosition: {x: 0.0074431077, y: 0.063961774, z: -0.0024286865}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2500111533118329380}
+  m_Father: {fileID: 6818029339029318416}
+  m_LocalEulerAnglesHint: {x: 66.1143, y: -176.7949, z: -169.47487}
+--- !u!1 &3498363443086876818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8075440283109348502}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandRing3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8075440283109348502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3498363443086876818}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.102948844, y: 0.021879828, z: 0.0014344023, w: 0.99444497}
+  m_LocalPosition: {x: -0.00001504199, y: 0.01398967, z: -8.1704327e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4678372832128118690}
+  m_Father: {fileID: 5179415355466726088}
+  m_LocalEulerAnglesHint: {x: 26.008652, y: 2.8077865, z: 1.1417534}
+--- !u!1 &3649701138782608083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4156829968918549904}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Shotgun_2:joint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4156829968918549904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3649701138782608083}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.3450169, y: 0.0917945, z: -0.06514409, w: 0.93182266}
+  m_LocalPosition: {x: -0.08712472, y: -0.4039567, z: 0.05163244}
+  m_LocalScale: {x: 1.7363203, y: 1.7363203, z: 1.7363203}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 511652219270885277}
+  m_Father: {fileID: 6718488650534843505}
+  m_LocalEulerAnglesHint: {x: 26.684046, y: -21.460772, z: -34.930073}
+--- !u!1 &3656276308315448923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4678372832128118690}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandRing4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4678372832128118690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656276308315448923}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000026893913, y: 0.0104544135, z: 6.437304e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8075440283109348502}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3870976827185845891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3466528789788252403}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Mesh_GRP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3466528789788252403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3870976827185845891}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 610927371552267017}
+  m_Father: {fileID: 2890701648691111544}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3933893717980786516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2501113584294806797}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:FK_LeftForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2501113584294806797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933893717980786516}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.001940777, y: -0.00009709841, z: -0.049968097, w: 0.99874896}
+  m_LocalPosition: {x: 2.1868544e-10, y: 0.13446909, z: -4.6563528e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5879774262730584857}
+  m_Father: {fileID: 1363357392309608136}
+  m_LocalEulerAnglesHint: {x: 0.22156323, y: -0.022225339, z: -5.7283616}
+--- !u!1 &4025697533673582702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142516406594386375}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:LeftForeArm_IK_BakingLOC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1142516406594386375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4025697533673582702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.067234546, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3591817566865626358}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4138686674415046530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1680025978889250794}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandThumb2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680025978889250794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4138686674415046530}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.084927864, y: 0.0000062140534, z: -0.000072904244, w: 0.9963871}
+  m_LocalPosition: {x: 0.0020474577, y: 0.019774113, z: 6.531781e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3272741334048792279}
+  m_Father: {fileID: 678610143053545060}
+  m_LocalEulerAnglesHint: {x: 9.743754, y: -0.00000037366232, z: -12.217981}
+--- !u!1 &4147276445622136660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511652219270885277}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Shotgun_2:joint2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511652219270885277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4147276445622136660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.008942182, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4156829968918549904}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4178034834983462974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5769362386387777746}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandIndex2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5769362386387777746
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4178034834983462974}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.48052055, y: 2.916336e-19, z: 7.752436e-18, w: 0.87698346}
+  m_LocalPosition: {x: 0.00001516202, y: 0.01469114, z: -4.1765544e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3054606774495017755}
+  m_Father: {fileID: 5465598990806013714}
+  m_LocalEulerAnglesHint: {x: 57.43881, y: 8.8718834e-16, z: 1.5463864e-15}
+--- !u!1 &4275521149219339245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17314250046139427}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:IK_LeftHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17314250046139427
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4275521149219339245}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.06699371, y: 0.37775302, z: 0.14409794, w: 0.91216797}
+  m_LocalPosition: {x: 4.3748102e-10, y: 0.11213085, z: -2.4387986e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7054927043828260023}
+  m_LocalEulerAnglesHint: {x: -14.182332, y: -8.938524, z: -20.460892}
+--- !u!1 &4454750257643811302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3591817566865626358}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3591817566865626358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454750257643811302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0015057733, y: 0.0018673268, z: -0.46718085, w: 0.88415855}
+  m_LocalPosition: {x: 2.1868544e-10, y: 0.13446909, z: -4.6563528e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8029672585081894547}
+  - {fileID: 1142516406594386375}
+  m_Father: {fileID: 3398651860637303661}
+  m_LocalEulerAnglesHint: {x: 0.2380356, y: 0.13638584, z: -48.274532}
+--- !u!1 &4470567342076769499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3085202372912187381}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:joint3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3085202372912187381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4470567342076769499}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.7747583e-17, y: 0.04310694, z: 0.21606806}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 271480808910338873}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4663905752297769176
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3272741334048792279}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandThumb3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3272741334048792279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4663905752297769176}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.21763012, y: -0.000023885537, z: -0.000107122265, w: 0.97603136}
+  m_LocalPosition: {x: 0.00048282385, y: 0.018778007, z: 9.1196206e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8634092444033010846}
+  m_Father: {fileID: 1680025978889250794}
+  m_LocalEulerAnglesHint: {x: -25.268562, y: -0.021547535, z: -17.971825}
+--- !u!1 &4733106849839235537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618050110859090097}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandPinky2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1618050110859090097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4733106849839235537}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.44204712, y: 1.533659e-18, z: 3.1120656e-18, w: 0.89699185}
+  m_LocalPosition: {x: -0.0000036456822, y: 0.012587856, z: 1.407588e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 724654890160758824}
+  m_Father: {fileID: 2282119821549395744}
+  m_LocalEulerAnglesHint: {x: 84.13476, y: 10.935043, z: 10.935043}
+--- !u!1 &4774649915509288093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4666373586445441374}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandMiddle4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4666373586445441374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4774649915509288093}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0000023569244, y: 0.012300801, z: -1.07898614e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2935395494231584995}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4775945948124942680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7966110986304500412}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7966110986304500412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4775945948124942680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.4187017, y: 0.5346792, z: 0.011030015, w: 0.7339519}
+  m_LocalPosition: {x: 1.2286058e-10, y: 0.0601086, z: 9.2604874e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3365115776986975296}
+  m_Father: {fileID: 4188228967039441690}
+  m_LocalEulerAnglesHint: {x: 19.391665, y: 29.606667, z: 57.871826}
+--- !u!1 &4780536373552209852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4186822737908166651}
+  - component: {fileID: 1379721386580404397}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:polySurface18
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4186822737908166651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780536373552209852}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7750352667713902304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &1379721386580404397
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4780536373552209852}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 8194148942703300240, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: 8734685300008754394, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_Bones:
+  - {fileID: 271480808910338873}
+  - {fileID: 9174592480394574304}
+  - {fileID: 3085202372912187381}
+  - {fileID: 6561831597652695978}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 271480808910338873}
+  m_AABB:
+    m_Center: {x: 0.020120947, y: 0.047743037, z: 0.18409935}
+    m_Extent: {x: 0.014533525, y: 0.010527238, z: 0.048944473}
+  m_DirtyAABB: 0
+--- !u!1 &4883841781625857035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6451033074027812596}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandPinky4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6451033074027812596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883841781625857035}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00005108178, y: 0.007943819, z: 2.1591844e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6982715817865133294}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4883848790023565818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 271480808910338873}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:COG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &271480808910338873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4883848790023565818}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.34272033, y: -0.06358686, z: 0.073303066, w: 0.9344122}
+  m_LocalPosition: {x: 0.07090927, y: -0.23164831, z: -0.29243413}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 9174592480394574304}
+  - {fileID: 3085202372912187381}
+  - {fileID: 6561831597652695978}
+  m_Father: {fileID: 6718488650534843505}
+  m_LocalEulerAnglesHint: {x: -4.32418, y: -9.4718485, z: -23.342432}
+--- !u!1 &5050949905643689533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8040166565049251689}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandMiddle1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8040166565049251689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5050949905643689533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.340167, y: -0.0008645105, z: -0.002389859, w: 0.9403616}
+  m_LocalPosition: {x: 0.0056559998, y: 0.061838, z: -0.001372379}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4675677936367615941}
+  m_Father: {fileID: 8029672585081894547}
+  m_LocalEulerAnglesHint: {x: 53.986027, y: -0.40839326, z: -0.5032044}
+--- !u!1 &5085975330439473546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6988938416247001190}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:FK_RightForeArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6988938416247001190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5085975330439473546}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.0019014745, y: 0.000095744406, z: 0.050288912, w: 0.9987329}
+  m_LocalPosition: {x: 1.2805249e-10, y: 0.13446088, z: 0.0000000015698836}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3797475575543388666}
+  m_Father: {fileID: 6106875539866519917}
+  m_LocalEulerAnglesHint: {x: 0.21706532, y: 0.021915529, z: 5.765168}
+--- !u!1 &5140227341633219270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40245335283532680}
+  - component: {fileID: 4089780488884061739}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:SM_Wep_Mod_Underbarrel_Shotgun_Trigger_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40245335283532680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5140227341633219270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7750352667713902304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &4089780488884061739
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5140227341633219270}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -7721509867871075662, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: -1263187435647503559, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_Bones:
+  - {fileID: 271480808910338873}
+  - {fileID: 9174592480394574304}
+  - {fileID: 3085202372912187381}
+  - {fileID: 6561831597652695978}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 271480808910338873}
+  m_AABB:
+    m_Center: {x: 6.9849193e-10, y: -0.0144099295, z: 0.07433049}
+    m_Extent: {x: 0.0022080748, y: 0.021272898, z: 0.017541356}
+  m_DirtyAABB: 0
+--- !u!1 &5402998912840234375
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6982715817865133294}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandPinky3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6982715817865133294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5402998912840234375}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.33009443, y: -3.2749774e-18, z: 1.1452451e-18, w: 0.943948}
+  m_LocalPosition: {x: 0.000059382248, y: 0.010994055, z: -4.0999387e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6451033074027812596}
+  m_Father: {fileID: 7530076767705674049}
+  m_LocalEulerAnglesHint: {x: 38.54901, y: -4.1613254e-16, z: 0}
+--- !u!1 &5628992190975600958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 211671798528437058}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:joint1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &211671798528437058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5628992190975600958}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0001646778, y: 0.06330467, z: 0.026827278}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3801574218345840957}
+  - {fileID: 4188228967039441690}
+  m_Father: {fileID: 5622675377906919983}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5797508645808358380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96259999632924258}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandIndex1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &96259999632924258
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797508645808358380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.19079392, y: 0.0036703262, z: 0.018880121, w: 0.9814417}
+  m_LocalPosition: {x: 0.02015373, y: 0.059740495, z: -0.0005755494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 3197688289273619310}
+  m_Father: {fileID: 8029672585081894547}
+  m_LocalEulerAnglesHint: {x: 67.42291, y: 6.2707405, z: 6.704185}
+--- !u!1 &6135054355807475027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1867780394610328523}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandThumb1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1867780394610328523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6135054355807475027}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.18995605, y: 0.020294938, z: 0.36330882, w: 0.91187257}
+  m_LocalPosition: {x: -0.012524055, y: 0.019023765, z: 0.009171567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4156930232938729635}
+  m_Father: {fileID: 6818029339029318416}
+  m_LocalEulerAnglesHint: {x: 19.371065, y: 10.692715, z: 45.27683}
+--- !u!1 &6154938744821225511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8029672585081894547}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8029672585081894547
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6154938744821225511}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.06699371, y: 0.37775302, z: 0.14409794, w: 0.91216797}
+  m_LocalPosition: {x: 4.3748102e-10, y: 0.11213085, z: -2.4387972e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 96259999632924258}
+  - {fileID: 8040166565049251689}
+  - {fileID: 2282119821549395744}
+  - {fileID: 2860520182251572659}
+  - {fileID: 678610143053545060}
+  m_Father: {fileID: 3591817566865626358}
+  m_LocalEulerAnglesHint: {x: -14.182332, y: -8.938524, z: -20.460892}
+--- !u!1 &6263637688207330652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4152945241049011184}
+  m_Layer: 3
+  m_Name: ParticleSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4152945241049011184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6263637688207330652}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 939459652926837443}
+  - {fileID: 7129657611056041572}
+  m_Father: {fileID: 7750352667713902304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6415881045967342845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7601638727558105504}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandRing4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7601638727558105504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6415881045967342845}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0000144029955, y: 0.0096612, z: 2.2375417e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2907489039015657469}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6513778420286344628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4020699152190120686}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandThumb4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4020699152190120686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6513778420286344628}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0016858006, y: 0.013756816, z: -1.2696688e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3942593442411710885}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6569537213850493280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3197688289273619310}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandIndex2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3197688289273619310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6569537213850493280}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.1848977, y: -3.3695328e-18, z: 8.545944e-19, w: 0.9827578}
+  m_LocalPosition: {x: 0.00003488094, y: 0.014935079, z: -0.0000000012849226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1594371453192640026}
+  m_Father: {fileID: 96259999632924258}
+  m_LocalEulerAnglesHint: {x: 66.85179, y: -4.3027966e-16, z: 5.4820773e-17}
+--- !u!1 &6718979418636086635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4559401666177030321}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:IK_RightHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4559401666177030321
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718979418636086635}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.20440385, y: -0.27081412, z: -0.21849984, w: 0.9149517}
+  m_LocalPosition: {x: 4.61382e-10, y: 0.11211179, z: -0.000000001728782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1351693603469167402}
+  m_LocalEulerAnglesHint: {x: -0.5397109, y: -78.926155, z: 0.95891416}
+--- !u!1 &6750566426071522755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8634092444033010846}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandThumb4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8634092444033010846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6750566426071522755}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00025800016, y: 0.011685713, z: 0.0029167694}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3272741334048792279}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6776145727837300533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2890701648691111544}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Character
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2890701648691111544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6776145727837300533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0000006866455, y: 0.00013124662, z: 0.014334025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5569009580981651970}
+  - {fileID: 3466528789788252403}
+  m_Father: {fileID: 6718488650534843505}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6949592958505356353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6106875539866519917}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:FK_RightArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6106875539866519917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949592958505356353}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.0145626385, y: -0.00023949821, z: 0.016442105, w: 0.9997587}
+  m_LocalPosition: {x: 1.2286058e-10, y: 0.0601086, z: 9.2604874e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6988938416247001190}
+  m_Father: {fileID: 4188228967039441690}
+  m_LocalEulerAnglesHint: {x: -1.6681371, y: -0.054898877, z: 1.8852105}
+--- !u!1 &7060373171034545713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8580570028226013803}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:IK_RightArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8580570028226013803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7060373171034545713}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.4187017, y: 0.5346792, z: 0.011030015, w: 0.7339519}
+  m_LocalPosition: {x: 1.2286058e-10, y: 0.0601086, z: 9.2604874e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1351693603469167402}
+  m_Father: {fileID: 4188228967039441690}
+  m_LocalEulerAnglesHint: {x: 19.394892, y: 29.61204, z: 57.841206}
+--- !u!1 &7665594184832440186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5569009580981651970}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:CTRL_GRP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5569009580981651970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7665594184832440186}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5622675377906919983}
+  m_Father: {fileID: 2890701648691111544}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7790399917189711938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6718488650534843505}
+  - component: {fileID: 7385228043783822355}
+  - component: {fileID: 5554465999550461002}
+  m_Layer: 3
+  m_Name: SPAS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6718488650534843505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7790399917189711938}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2890701648691111544}
+  - {fileID: 1451540333553498081}
+  - {fileID: 4156829968918549904}
+  - {fileID: 271480808910338873}
+  - {fileID: 7750352667713902304}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &7385228043783822355
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7790399917189711938}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 76c5607b9bf877f4d9e72efdfb79e5f5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5554465999550461002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7790399917189711938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946b07a37d746874989a62a65cd43c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponName: SPAS-SHOTGUN
+  range: 100
+  damage: 10
+  fireRate: 1.6
+  maxAmmo: 6
+  reloadTime: 4
+  fpsCamera: {fileID: 0}
+  animator: {fileID: 7385228043783822355}
+  muzzleFlash: {fileID: 8901869632950908063}
+  casingDrop: {fileID: 8677657009296972643}
+  concreteMist: {fileID: 8339945415255797452, guid: 8df52251c42f992428c620c867aa1529, type: 3}
+  concreteImpact: {fileID: 7483495999693122803, guid: dac21a54a5d9a204ba4d49a20d004bdf, type: 3}
+  mudMist: {fileID: 8339945415255797452, guid: 79e4ef7cb676f3747a621f1379f7eb4b, type: 3}
+  mudImpact: {fileID: 7483495999693122803, guid: 4dbef98a59fbfeb47b2cb9252e671de4, type: 3}
+  impactEffect: {fileID: 8339945415255797452, guid: b0d402836e8adeb419f5a8fc0769dd85, type: 3}
+  impactBloodEffect: {fileID: 7483495999693122803, guid: fd64d3237f2b3ee4daa94ba00c4eb846, type: 3}
+  isDroppingBulletCasing: 0
+  reticle: {fileID: 0}
+  normalFOV: 60
+  aimFOV: 40
+  aimSpeed: 8
+--- !u!1 &7860512793564150665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7530076767705674049}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandPinky2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7530076767705674049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7860512793564150665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.049101025, y: 3.6356155e-18, z: 3.2949087e-18, w: 0.99879384}
+  m_LocalPosition: {x: -0.000008300396, y: 0.012017631, z: 9.832596e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6982715817865133294}
+  m_Father: {fileID: 5030585928203897551}
+  m_LocalEulerAnglesHint: {x: 5.628826, y: 4.57146e-16, z: 4.1814875e-16}
+--- !u!1 &7913004437157151192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4188228967039441690}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightShoulder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4188228967039441690
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7913004437157151192}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.5289551, y: -0.38905907, z: 0.60658604, w: -0.44821078}
+  m_LocalPosition: {x: 0.028108252, y: 0.014631088, z: -0.0048004696}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7966110986304500412}
+  - {fileID: 6106875539866519917}
+  - {fileID: 8580570028226013803}
+  m_Father: {fileID: 211671798528437058}
+  m_LocalEulerAnglesHint: {x: 71.11362, y: -64.827866, z: -155.9012}
+--- !u!1 &7926615923857609324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4675677936367615941}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandMiddle2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4675677936367615941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7926615923857609324}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40399405, y: 1.8522255e-19, z: -3.874535e-18, w: 0.9147616}
+  m_LocalPosition: {x: 0.000004720284, y: 0.0155876875, z: 8.171864e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2935395494231584995}
+  m_Father: {fileID: 8040166565049251689}
+  m_LocalEulerAnglesHint: {x: 61.869015, y: -3.9163182e-16, z: -6.1027824e-16}
+--- !u!1 &7998005791397233015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7398698250902511523}
+  - component: {fileID: 8017180651123077045}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:SM_Wep_Mod_Underbarrel_Shotgun_Pump_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7398698250902511523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7998005791397233015}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7750352667713902304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &8017180651123077045
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7998005791397233015}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 17793dc5f9ed95a47b575440bb6c6168, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: -1708619552419132839, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_Bones:
+  - {fileID: 271480808910338873}
+  - {fileID: 9174592480394574304}
+  - {fileID: 3085202372912187381}
+  - {fileID: 6561831597652695978}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 271480808910338873}
+  m_AABB:
+    m_Center: {x: 0.0000000037252903, y: 0.009938597, z: 0.44472778}
+    m_Extent: {x: 0.027921457, y: 0.027921468, z: 0.07736118}
+  m_DirtyAABB: 0
+--- !u!1 &8055334365636294954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7750352667713902304}
+  - component: {fileID: 1602759527340533896}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Spas_Shotgun:SM_Wep_Mod_Underbarrel_Shotgun_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7750352667713902304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055334365636294954}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4186822737908166651}
+  - {fileID: 7398698250902511523}
+  - {fileID: 40245335283532680}
+  - {fileID: 4152945241049011184}
+  m_Father: {fileID: 6718488650534843505}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!137 &1602759527340533896
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8055334365636294954}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 3
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 17793dc5f9ed95a47b575440bb6c6168, type: 2}
+  - {fileID: 2100000, guid: 17793dc5f9ed95a47b575440bb6c6168, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_SkinnedMotionVectors: 1
+  m_Mesh: {fileID: -3518476461152602500, guid: 10d3e3ad1eaa1844b978f2d3afe79c8a, type: 3}
+  m_Bones:
+  - {fileID: 271480808910338873}
+  - {fileID: 9174592480394574304}
+  - {fileID: 3085202372912187381}
+  - {fileID: 6561831597652695978}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 271480808910338873}
+  m_AABB:
+    m_Center: {x: -0.0000000018626451, y: -0.016100131, z: 0.23921934}
+    m_Extent: {x: 0.021223852, y: 0.09470343, z: 0.32498094}
+  m_DirtyAABB: 0
+--- !u!1 &8116984223642922516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547424999331671620}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandMiddle4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &547424999331671620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8116984223642922516}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.000015056377, y: 0.012300255, z: 1.9604116e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4435321733495260875}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8124209891031719682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2907489039015657469}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandRing3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2907489039015657469
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8124209891031719682}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.023911748, y: -0, z: -0, w: 0.9997141}
+  m_LocalPosition: {x: 0.0000057590455, y: 0.0133454595, z: 8.4272567e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7601638727558105504}
+  m_Father: {fileID: 2500111533118329380}
+  m_LocalEulerAnglesHint: {x: 2.7403457, y: 0, z: 0}
+--- !u!1 &8316986423803078296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5204681730079465168}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:IK_LeftArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5204681730079465168
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8316986423803078296}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.76157665, y: -0.24841626, z: -0.018693017, w: 0.5982817}
+  m_LocalPosition: {x: -1.3586754e-10, y: 0.0601086, z: 9.2422975e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7054927043828260023}
+  m_Father: {fileID: 3801574218345840957}
+  m_LocalEulerAnglesHint: {x: 65.033195, y: -69.79774, z: -117.27204}
+--- !u!1 &8592101388862020520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5538038811467161638}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandPinky4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5538038811467161638
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8592101388862020520}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.000059075774, y: 0.007968145, z: 7.058986e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 724654890160758824}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8655398468137706148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6818029339029318416}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6818029339029318416
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8655398468137706148}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.20440385, y: -0.27081412, z: -0.21849984, w: 0.9149517}
+  m_LocalPosition: {x: 4.6138196e-10, y: 0.11211179, z: -0.000000001728782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5465598990806013714}
+  - {fileID: 6577946230562232869}
+  - {fileID: 5030585928203897551}
+  - {fileID: 8010412294636127853}
+  - {fileID: 1867780394610328523}
+  m_Father: {fileID: 3365115776986975296}
+  m_LocalEulerAnglesHint: {x: -0.5397109, y: -78.926155, z: 0.95891416}
+--- !u!1 &8982364563615891976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5465598990806013714}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_RightHandIndex1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5465598990806013714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8982364563615891976}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.09508057, y: -0.002676031, z: 0.028006205, w: 0.995072}
+  m_LocalPosition: {x: -0.01924516, y: 0.06022981, z: -0.00031068327}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5769362386387777746}
+  m_Father: {fileID: 6818029339029318416}
+  m_LocalEulerAnglesHint: {x: -10.898755, y: -0.62150085, z: 3.2836072}
+--- !u!1 &9005481984233512544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2282119821549395744}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandPinky1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2282119821549395744
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9005481984233512544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.51129055, y: 0.025986359, z: 0.04360319, w: 0.85790765}
+  m_LocalPosition: {x: -0.018832404, y: 0.061079234, z: -0.0010499477}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1618050110859090097}
+  m_Father: {fileID: 8029672585081894547}
+  m_LocalEulerAnglesHint: {x: 85.94764, y: 106.8628, z: 106.660995}
+--- !u!1 &9017692299636084003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3578556298003302391}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:RightForeArm_IK_BakingLOC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3578556298003302391
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9017692299636084003}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.06723044, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3365115776986975296}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9034603986129237569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724654890160758824}
+  m_Layer: 3
+  m_Name: Spas_Shotgun_animation_V3_f:Hand_Rig_2:Bind_LeftHandPinky3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724654890160758824
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9034603986129237569}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.21339679, y: -4.1298994e-18, z: -2.6491615e-18, w: 0.9769656}
+  m_LocalPosition: {x: -0.000055430184, y: 0.010772457, z: -6.7606676e-10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5538038811467161638}
+  m_Father: {fileID: 1618050110859090097}
+  m_LocalEulerAnglesHint: {x: 57.00609, y: -1.1598351e-15, z: -8.272584e-16}
+--- !u!1001 &5040624623955956387
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4152945241049011184}
+    m_Modifications:
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.095
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0073
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.482
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9821066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.08158391
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.16915423
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.014051695
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 9.497
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -19.545
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8799667030406717588, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+      propertyPath: m_Name
+      value: MuzzleFlash-Spas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+--- !u!4 &939459652926837443 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5258591313321738336, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+  m_PrefabInstance: {fileID: 5040624623955956387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8901869632950908063 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 4501961525771855420, guid: 8bc2bd64b7e59444497f72c8d62396a5, type: 3}
+  m_PrefabInstance: {fileID: 5040624623955956387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7973975198398629997
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4152945241049011184}
+    m_Modifications:
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0731
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0873
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1264
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.67643434
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.20600133
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6764344
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.20600142
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -33.875
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266235653553616256, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+      propertyPath: m_Name
+      value: Shotgun-Shell
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+--- !u!4 &7129657611056041572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 889709293382960649, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+  m_PrefabInstance: {fileID: 7973975198398629997}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8677657009296972643 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1640571554750288654, guid: 70a7bec8a1ed603429398c16ce3431f9, type: 3}
+  m_PrefabInstance: {fileID: 7973975198398629997}
+  m_PrefabAsset: {fileID: 0}

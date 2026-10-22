@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 0d7c629b35aed8048b548d6b59dc1510
+timeCreated: 1536746338
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 218312
+  packageName: Crossbow One-handed
+  packageVersion: 1.0
+  assetPath: Assets/Crossbow/Materials/Crossbow.mat
+  uploadId: 493245

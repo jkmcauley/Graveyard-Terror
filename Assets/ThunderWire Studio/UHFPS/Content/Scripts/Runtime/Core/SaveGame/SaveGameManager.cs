@@ -346,6 +346,13 @@ namespace UHFPS.Runtime
             if (!HasReference)
                 return null;
 
+            // Quit can run before Inventory.Awake builds the pocket list.
+            Inventory pockets = Instance.inventory;
+            if (pockets == null || pockets.carryingItems == null)
+                return null;
+            if (Instance.playerPresence == null || Instance.playerPresence.Player == null)
+                return null;
+
             Instance.SetStaticPlayerData();
             return PlayerData?.ToString(Formatting.None);
         }
@@ -563,8 +570,10 @@ namespace UHFPS.Runtime
             // Generate Player Data Buffer: Inventory, Objectives, Other stuff...
             StorableCollection buffer = new StorableCollection();
 
-            buffer.Add("inventory", (inventory as ISaveableCustom).OnCustomSave());
-            buffer.Add("objectives", (objectiveManager as ISaveableCustom).OnCustomSave());
+            if (inventory is ISaveableCustom inventorySave)
+                buffer.Add("inventory", inventorySave.OnCustomSave());
+            if (objectiveManager is ISaveableCustom objectiveSave)
+                buffer.Add("objectives", objectiveSave.OnCustomSave());
 
             return buffer;
         }

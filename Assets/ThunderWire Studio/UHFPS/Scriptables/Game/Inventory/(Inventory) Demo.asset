@@ -440,6 +440,49 @@ MonoBehaviour:
         descriptionKey:
           GlocText: item.description.flamegun
           NormalText: A short-range flamethrower.
+    - GUID: c4b0a11e8f2d4a6b9e1c7d5a3f8b2041
+      SectionGUID: d96703d3846a4320840b6f588ab43050
+      Title: Crossbow
+      Description: A repeating crossbow. Fires a bolt and draws the string back.
+      Width: 2
+      Height: 1
+      Padding: 0
+      Orientation: 0
+      FlipDirection: 0
+      Icon: {fileID: 21300000, guid: b4c7e2a19d3f4b6e8a1c5d0f7e9b3a48, type: 3}
+      ItemObject:
+        GUID: 
+        Object: {fileID: 0}
+      Settings:
+        isUsable: 1
+        isStackable: 0
+        isExaminable: 0
+        isCombinable: 0
+        isDroppable: 0
+        isDiscardable: 0
+        canBindShortcut: 1
+        alwaysShowQuantity: 1
+        applyAttributesOnUse: 0
+      UsableSettings:
+        usableType: 0
+        playerItemIndex: 11
+        healthPoints: 0
+        removeOnUse: 0
+        customData:
+          Type: 0
+          JsonData: 
+          ItemAttributes:
+            Items: []
+      Properties:
+        maxStack: 0
+      CombineSettings: []
+      LocalizationSettings:
+        titleKey:
+          GlocText: item.title.crossbow
+          NormalText: Crossbow
+        descriptionKey:
+          GlocText: item.description.crossbow
+          NormalText: A repeating crossbow. Fires a bolt and draws the string back.
     - GUID: ade6ef7d6aba40b2bc01c78e845bfa08
       SectionGUID: d96703d3846a4320840b6f588ab43050
       Title: Thermometer
@@ -1007,6 +1050,49 @@ MonoBehaviour:
           GlocText: item.description.pistolammo
           NormalText: Compatible with a variety of firearms. With its compact size
             and high stopping power, 9mm ammo is perfect for close-range combat situations.
+    - GUID: e7d2c91a4b6e4f0c8a3d5e1b7c9f0428
+      SectionGUID: 401b335b9c9c4c5588e0ec76a2faef23
+      Title: Arrow
+      Description: Bolts for the crossbow.
+      Width: 2
+      Height: 1
+      Padding: 0
+      Orientation: 0
+      FlipDirection: 0
+      Icon: {fileID: 21300000, guid: 6e58a3349bfbf664f9cac314f2c04b18, type: 3}
+      ItemObject:
+        GUID: 
+        Object: {fileID: 0}
+      Settings:
+        isUsable: 0
+        isStackable: 1
+        isExaminable: 0
+        isCombinable: 0
+        isDroppable: 0
+        isDiscardable: 0
+        canBindShortcut: 0
+        alwaysShowQuantity: 1
+        applyAttributesOnUse: 0
+      UsableSettings:
+        usableType: 0
+        playerItemIndex: -1
+        healthPoints: 0
+        removeOnUse: 0
+        customData:
+          Type: 0
+          JsonData: 
+          ItemAttributes:
+            Items: []
+      Properties:
+        maxStack: 64
+      CombineSettings: []
+      LocalizationSettings:
+        titleKey:
+          GlocText: item.title.arrow
+          NormalText: Arrow
+        descriptionKey:
+          GlocText: item.description.arrow
+          NormalText: Bolts for the crossbow.
   - Section:
       Name: Attachments
       GUID: 1c8a94e2ba1b4ecea9171599ad9bce5e

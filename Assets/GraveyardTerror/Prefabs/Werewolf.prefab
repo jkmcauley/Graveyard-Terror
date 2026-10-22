@@ -1166,6 +1166,7 @@ MonoBehaviour:
   _turnSpeed: 240
   _clawDamage: 4
   _grabDamage: 6
+  _monsterGrowl: {fileID: 8300000, guid: 54eb80d4ed8304ead998a45908c2ead5, type: 3}
 --- !u!1 &2945597161529257139
 GameObject:
   m_ObjectHideFlags: 0

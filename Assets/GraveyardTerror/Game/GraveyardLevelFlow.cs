@@ -23,7 +23,9 @@ public class GraveyardLevelFlow : MonoBehaviour
     const string OssabiteGuid = "59f0dbf8d803402380b5342aff68f188";
     const string PistolAmmoGuid = "a89400ede61f4e26aae37610a18b01c9";
     const string FlamegunGuid = "b7c1e4a09d2f4c5e8a6b3d1f0e9c8a72";
+    const string CrossbowGuid = "c4b0a11e8f2d4a6b9e1c7d5a3f8b2041";
     const int FlamegunPlayerItem = 10;
+    const int CrossbowPlayerItem = 11;
 
     Coroutine wireRoutine;
     bool suppressCapture;
@@ -38,6 +40,8 @@ public class GraveyardLevelFlow : MonoBehaviour
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Boot()
     {
+        // A paused play session leaves the clock at 0. Cutscenes and movement then wait forever.
+        Time.timeScale = 1f;
         var go = new GameObject(nameof(GraveyardLevelFlow));
         DontDestroyOnLoad(go);
         var flow = go.AddComponent<GraveyardLevelFlow>();
@@ -73,6 +77,8 @@ public class GraveyardLevelFlow : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Time.timeScale = 1f;
+
         if (wireRoutine != null)
             StopCoroutine(wireRoutine);
 
@@ -98,8 +104,9 @@ public class GraveyardLevelFlow : MonoBehaviour
             int level = levelNumber;
             bool freshRestart = restarting;
             restarting = false;
+            // Normal is a fresh Play after stopping the editor. Loading the last
+            // level's player then skips weapons, the opening cutscene, and enemy setup.
             bool carryIn = freshRestart
-                || SaveGameManager.GameLoadType == SaveGameManager.LoadType.Normal
                 || SaveGameManager.GameLoadType == SaveGameManager.LoadType.LoadPlayer;
             if (carryIn && level > 1)
                 TryApplyCarry(level, freshRestart || level >= 3);
@@ -131,7 +138,12 @@ public class GraveyardLevelFlow : MonoBehaviour
         levelMarked = true;
         MarkComplete(watchingLevel);
         if (GameManager.HasReference && GameManager.Instance.HintMessageGroup != null)
-            GameManager.Instance.ShowHintMessage("Level complete.", 4f);
+        {
+            string message = GraveyardLevels.IsBossLevel(SceneManager.GetActiveScene().name)
+                ? "Game over."
+                : "Level complete.";
+            GameManager.Instance.ShowHintMessage(message, 4f);
+        }
     }
 
     IEnumerator WireAfterUi(string sceneName)
@@ -144,6 +156,10 @@ public class GraveyardLevelFlow : MonoBehaviour
 
         if (level >= 2)
             GiveLevelTwoKit();
+
+        RestoreChestFlamegun();
+        yield return null;
+        RestoreChestFlamegun();
 
         string label = "Restart Level " + level;
         const string tooltip = "Start this level over from the beginning.";
@@ -330,16 +346,34 @@ public class GraveyardLevelFlow : MonoBehaviour
         }
 
         if (level == 4)
-            StripFlamegun(player);
+            StripCarriedItem(player, FlamegunGuid, FlamegunPlayerItem);
+        if (level == 5)
+            StripCarriedItem(player, CrossbowGuid, CrossbowPlayerItem);
 
         SaveGameManager.UsePlayerJson(player.ToString(Formatting.None));
     }
 
-    static void StripFlamegun(JObject player)
+    static void RestoreChestFlamegun()
+    {
+        var pickups = FindObjectsByType<InteractableItem>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        foreach (var pickup in pickups)
+        {
+            if (pickup == null || pickup.PickupItem == null)
+                continue;
+            if (pickup.PickupItem.GUID != FlamegunGuid)
+                continue;
+            if (pickup.gameObject.layer != 6)
+                continue;
+
+            pickup.gameObject.SetActive(true);
+        }
+    }
+
+    static void StripCarriedItem(JObject player, string itemGuid, int playerItemIndex)
     {
         if (player["localData"] is JObject local
             && local["selectedItem"] != null
-            && local["selectedItem"].Value<int>() == FlamegunPlayerItem)
+            && local["selectedItem"].Value<int>() == playerItemIndex)
             local["selectedItem"] = -1;
 
         if (player["globalData"]?["inventory"] is not JObject inventory)
@@ -350,7 +384,7 @@ public class GraveyardLevelFlow : MonoBehaviour
             var remove = new List<string>();
             foreach (var prop in items.Properties())
             {
-                if (prop.Value["item"]?.ToString() == FlamegunGuid)
+                if (prop.Value["item"]?.ToString() == itemGuid)
                     remove.Add(prop.Name);
             }
 
@@ -362,7 +396,7 @@ public class GraveyardLevelFlow : MonoBehaviour
         {
             foreach (var prop in shortcuts.Properties())
             {
-                if (prop.Value?.ToString() == FlamegunGuid)
+                if (prop.Value?.ToString() == itemGuid)
                     prop.Value = "{}";
             }
         }

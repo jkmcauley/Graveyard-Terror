@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 07e3d7783ad907141a6c53c9b274b558
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 218312
+  packageName: Crossbow One-handed
+  packageVersion: 1.0
+  assetPath: Assets/Crossbow/Materials/CrossbowFade.mat
+  uploadId: 493245

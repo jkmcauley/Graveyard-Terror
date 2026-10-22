@@ -58,6 +58,25 @@ public class EnemyFlameBurn : MonoBehaviour
         _deathStarted = false;
     }
 
+    public void Extinguish()
+    {
+        if (_bodyRoutine != null)
+            StopCoroutine(_bodyRoutine);
+        if (_groundRoutine != null)
+            StopCoroutine(_groundRoutine);
+
+        _bodyRoutine = null;
+        _groundRoutine = null;
+
+        if (_bodyFire != null)
+            Destroy(_bodyFire);
+
+        _bodyFire = null;
+        _ignited = false;
+        _deathStarted = false;
+        _hasDeathPosition = false;
+    }
+
     public void Ignite(GameObject bodyFirePrefab, GameObject groundFirePrefab)
     {
         if (bodyFirePrefab != null)

@@ -24,6 +24,12 @@ namespace UHFPS.Runtime
             PickupText.text = text;
             PickupIcon.sprite = icon;
 
+            if (icon == null)
+            {
+                StartCoroutine(OnShowPickupElement(time));
+                return;
+            }
+
             Vector2 slotSize = Vector2.one * FitSize;
             Vector2 iconSize = icon.rect.size;
 

@@ -1,0 +1,85 @@
+Backrock Studios - FPS Weapon Showcase Package Documentation
+Overview
+Welcome to the FPS Weapon Showcase Package by Backrock Studios.
+ This package is designed to showcase high-quality 3D models
+ and animations for various weapons in a first-person perspective.
+ Please note that all scripts included in this package are solely
+ for demonstrating the functionality and visual appeal of the models and animations.
+ They are not intended to create a fully functional First Person Shooter (FPS) system.
+
+Contents
+3D Models: High-quality weapon models designed for FPS games.
+Animations: Professional-grade animations including reload, fire, idle, and more.
+Scripts: Basic scripts to control weapon animations and switching between different weapons.
+These scripts are for demonstration purposes only and are not meant
+to serve as a base for a full FPS game.
+
+
+Usage Instructions
+Import the Package:
+
+Open Unity and create a new project.
+Import the FPS Weapon Showcase Package via the Unity Asset Store or by selecting Assets > 
+Import Package > Custom Package and choosing the package file.
+Scene Setup:
+
+After importing, open the provided demo scene located in the Scenes folder.
+ This scene is pre-configured to showcase all the included weapon models and their animations.
+Model and Animation Showcase:
+
+The demo scene allows you to preview each weapon model and its associated animations.
+ Use the provided scripts to switch between weapons and trigger different animations.
+
+
+Scripts:
+
+The scripts in this package are simple and are meant to control the animations and basic
+ functionality of the weapon models. These scripts are not optimized for a real game
+ environment and should not be used as the foundation for a complete FPS system.
+Feel free to modify or replace these scripts as needed to suit your project requirements.
+
+
+Disclaimer
+The scripts included in this package are purely for
+ showcasing purposes and should not be considered production-ready.However...Backrock Studios 
+provide support for adapting these scripts to a full FPS game system.
+
+
+Support
+For any inquiries or support regarding the 3D models and animations,
+ please contact Backrock Studios at hr@backrock.co
+
+Thank you for choosing Backrock Studios!
+
+What's new in 1.1.0
+- Works in new Unity 6 projects. Those enable only the Input System package,
+  where the 1.0 demo threw an error on every frame
+  and ignored the keyboard and mouse. The demo now reads
+  the keyboard and mouse through Scripts/PackInput.cs, which uses the Input
+  System when that is all the project enables and the Input Manager
+  otherwise.
+- Universal Render Pipeline (URP): when URP is the active render pipeline,
+  the pack converts its own materials with URP's material upgraders as the
+  Editor loads, so nothing renders pink. Run it again any time from
+  Tools > BackRock > FPS Weapons Pack > Set Up Materials For URP. In the
+  Built-in Render Pipeline the materials are left as they are.
+- URP: the arms and weapon are drawn by WeaponCamera, which clears only depth
+  so the weapon never clips into walls. URP cannot do that with a second
+  camera, so WeaponCameraStack (on WeaponCamera) makes it an Overlay camera in
+  the Main Camera's stack. Keep that component if you copy the Player into
+  your own scene.
+- Breakable crates fade out in URP as well as in the Built-in pipeline.
+- Player builds work again. Scripts/ExportPackage.cs was an editor tool that
+  stopped every build; it is now an empty file and you can delete it.
+
+Render pipelines
+Built-in Render Pipeline and URP, Unity 2022.3 or later. HDRP is not set up.
+
+Demo controls
+WASD or arrow keys: move
+Mouse: look
+Space: jump
+Left mouse button: fire
+Right mouse button: aim down sights
+R: reload
+Tab: weapon wheel (click a weapon to pick it)

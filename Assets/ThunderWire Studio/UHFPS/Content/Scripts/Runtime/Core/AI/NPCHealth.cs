@@ -78,19 +78,60 @@ namespace UHFPS.Runtime
             if (IsDead || corpseRemoved)
                 return;
 
+            BossTeleport boss = GetComponent<BossTeleport>();
+            if (boss == null)
+                boss = GetComponentInParent<BossTeleport>();
+
+            if (boss != null)
+            {
+                if (!boss.AcceptsPlayerHit())
+                    return;
+
+                ApplyDamageMax(sender);
+                OnTakeDamage?.Invoke(damage);
+                PlayDamageSound();
+                return;
+            }
+
             base.ApplyDamage(damage, sender);
             OnTakeDamage?.Invoke(damage);
+            PlayDamageSound();
+        }
 
-            if(DamageSounds.Length > 0)
-            {
-                int damageSound = GameTools.RandomUnique(0, DamageSounds.Length, lastDamageSound);
-                GameTools.PlayOneShot3D(transform.position, DamageSounds[damageSound], DamageVolume, "ZombieDamageAudio");
-                lastDamageSound = damageSound;
-            }
+        public void PlayHitReaction()
+        {
+            if (IsDead || corpseRemoved)
+                return;
+
+            OnTakeDamage?.Invoke(0);
+            PlayDamageSound();
+        }
+
+        void PlayDamageSound()
+        {
+            if (DamageSounds.Length == 0)
+                return;
+
+            int damageSound = GameTools.RandomUnique(0, DamageSounds.Length, lastDamageSound);
+            GameTools.PlayOneShot3D(transform.position, DamageSounds[damageSound], DamageVolume, "ZombieDamageAudio");
+            lastDamageSound = damageSound;
         }
 
         public override void OnHealthZero()
         {
+            BossTeleport boss = GetComponent<BossTeleport>();
+            if (boss == null)
+                boss = GetComponentInParent<BossTeleport>();
+
+            if (boss != null)
+            {
+                boss.PlayDeath();
+                OnDeath?.Invoke();
+                corpseRemoved = true;
+                GameTools.PlayOneShot3D(transform.position, DeathSound, "ZombieDeathAudio");
+                return;
+            }
+
             foreach (var component in DisableComponents)
             {
                 if(component is Behaviour behaviour)

@@ -2,8 +2,8 @@ using UnityEngine;
 using UHFPS.Runtime;
 
 /// <summary>
-/// Opens the chest once. After the lid finishes, the chest collider turns off
-/// so an item placed inside can be picked up with the interact key.
+/// Opens the chest once. After the lid finishes, chest colliders turn off
+/// so the item inside can be taken and examined like any other pickup.
 /// </summary>
 public class TreasureChestInteract : MonoBehaviour
 {
@@ -37,15 +37,26 @@ public class TreasureChestInteract : MonoBehaviour
             return;
 
         chest.isInteractLocked = true;
+        ClearBlockers();
+        cleared = true;
+    }
 
+    void ClearBlockers()
+    {
         if (interactCollider != null)
             interactCollider.enabled = false;
+
+        foreach (Collider blocker in GetComponentsInChildren<Collider>(true))
+        {
+            if (blocker == null || blocker.GetComponent<InteractableItem>() != null)
+                continue;
+
+            blocker.enabled = false;
+        }
 
         CustomInteractTitle title = GetComponent<CustomInteractTitle>();
         if (title != null)
             title.enabled = false;
-
-        cleared = true;
     }
 
     bool LidIsOpen()

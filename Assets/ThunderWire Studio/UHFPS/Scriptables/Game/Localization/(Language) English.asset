@@ -709,6 +709,22 @@ MonoBehaviour:
     Key: item.description.pistol
     Value: A trusty sidearm for close-range combat. This powerful weapon packs a
       punch and can be a lifesaver in dangerous situations.
+  - EntryId: 91011001
+    SectionId: 24283221
+    Key: item.title.crossbow
+    Value: Crossbow
+  - EntryId: 91011002
+    SectionId: 24283221
+    Key: item.description.crossbow
+    Value: A repeating crossbow. Fires a bolt and draws the string back.
+  - EntryId: 91011003
+    SectionId: 24283221
+    Key: item.title.arrow
+    Value: Arrow
+  - EntryId: 91011004
+    SectionId: 24283221
+    Key: item.description.arrow
+    Value: Bolts for the crossbow.
   - EntryId: 61872019
     SectionId: 24283221
     Key: item.title.thermometer

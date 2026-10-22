@@ -3,7 +3,7 @@
 /// </summary>
 public static class GraveyardLevels
 {
-    public const int Count = 4;
+    public const int Count = 5;
 
     public static int LevelNumber(string sceneName)
     {

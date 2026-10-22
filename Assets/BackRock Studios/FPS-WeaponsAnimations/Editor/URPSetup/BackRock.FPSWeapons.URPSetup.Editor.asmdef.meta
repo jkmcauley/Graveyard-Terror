@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d37820c6a1996bef369548e0cedfdb25
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 290455
+  packageName: FPS Weapons Pack - The Gunsmith's Collection | Game Ready | PBR |
+    URP
+  packageVersion: 1.1.0
+  assetPath: Assets/BackRock Studios/FPS-WeaponsAnimations/Editor/URPSetup/BackRock.FPSWeapons.URPSetup.Editor.asmdef
+  uploadId: 1021552

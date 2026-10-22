@@ -55,7 +55,16 @@ public class TimelineTrigger : MonoBehaviour
             _spawnManager.gameObject.SetActive(true);
 
         if (_boss != null)
-            _boss.gameObject.SetActive(false);
+        {
+            BossTeleport teleport = _boss.GetComponent<BossTeleport>();
+            if (teleport != null)
+            {
+                _boss.gameObject.SetActive(true);
+                teleport.Begin();
+            }
+            else
+                _boss.gameObject.SetActive(false);
+        }
 
         if (game != null)
             yield return game.StartBackgroundFade(true, 0.1f, fadeSpeed);

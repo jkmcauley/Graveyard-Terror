@@ -88,9 +88,9 @@ Material:
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
-    - _BlendAmount: 0.006405965
+    - _BlendAmount: 0.016680907
     - _BlendModePreserveSpecular: 1
-    - _BloodAmount: 0.02562386
+    - _BloodAmount: 0.06672363
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0

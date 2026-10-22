@@ -7,21 +7,35 @@ namespace UHFPS.Runtime
         public LayerMask CheckMask;
         public bool DestroyAfterTime = true;
         public float TimeAlive = 2f;
+        public float IgnoreHitDistance;
 
         private float force;
         private Vector3 direction;
         private Vector3 lastPosition;
+        private float traveled;
         private bool forceSet;
+        private bool timerStarted;
 
         private void Awake()
         {
             lastPosition = transform.position;
-            if(DestroyAfterTime) Destroy(gameObject, TimeAlive);
         }
 
         private void Update()
         {
-            if (forceSet) transform.Translate(direction * force * Time.deltaTime);
+            if (forceSet)
+            {
+                float step = force * Time.deltaTime;
+                transform.Translate(direction * step, Space.World);
+                traveled += step;
+            }
+
+            if (traveled < IgnoreHitDistance)
+            {
+                lastPosition = transform.position;
+                return;
+            }
+
             int mask = CheckMask.value;
             int npc = LayerMask.NameToLayer("NPC");
             if (npc >= 0)
@@ -35,9 +49,16 @@ namespace UHFPS.Runtime
 
         public void SetDirection(Vector3 direction, float force)
         {
-            this.direction = direction;
+            this.direction = direction.sqrMagnitude > 0.0001f ? direction.normalized : Vector3.forward;
             this.force = force;
             forceSet = true;
+            transform.rotation = Quaternion.LookRotation(this.direction);
+
+            if (DestroyAfterTime && !timerStarted)
+            {
+                Destroy(gameObject, TimeAlive);
+                timerStarted = true;
+            }
         }
     }
 }

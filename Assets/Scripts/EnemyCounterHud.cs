@@ -135,6 +135,16 @@ public class EnemyCounterHud : MonoBehaviour
         if (!show)
             return;
 
+        if (GraveyardLevels.IsBossLevel(SceneManager.GetActiveScene().name))
+        {
+            bool bossDead = BossIsDead();
+            _total = 1;
+            Remaining = bossDead ? 0 : 1;
+            SeenTotal = 1;
+            _label.text = bossDead ? "Game over" : "Boss";
+            return;
+        }
+
         _living.Clear();
         int remaining = Unspawned() + CollectLiving(_living);
         if (remaining > _total)
@@ -277,6 +287,23 @@ public class EnemyCounterHud : MonoBehaviour
         }
 
         return 1;
+    }
+
+    static bool BossIsDead()
+    {
+        bool found = false;
+        NPCHealth[] healths = Object.FindObjectsByType<NPCHealth>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        for (int i = 0; i < healths.Length; i++)
+        {
+            if (!IsBoss(healths[i]))
+                continue;
+
+            found = true;
+            if (!healths[i].IsDead)
+                return false;
+        }
+
+        return found;
     }
 
     static bool IsBoss(Component body)

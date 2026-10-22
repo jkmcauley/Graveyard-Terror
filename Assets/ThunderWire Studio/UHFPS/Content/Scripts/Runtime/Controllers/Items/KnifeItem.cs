@@ -117,6 +117,7 @@ namespace UHFPS.Runtime
             float step = (AttackAngle.RealMax - AttackAngle.RealMin) / (RaycastCount - 1);
             float mid = (AttackAngle.RealMin + AttackAngle.RealMax) / 2f;
 
+            bool struck = false;
             for (int i = 0; i < RaycastCount; i++)
             {
                 float angle = isLeftSlash 
@@ -131,41 +132,9 @@ namespace UHFPS.Runtime
                 Vector3 direction = Quaternion.AngleAxis(angle, upward) * forward;
                 Ray ray = new(PlayerItems.transform.position, direction);
 
-                if (Physics.Raycast(ray, out RaycastHit hit, distance, RaycastMask))
+                if (Strike(ray, distance))
                 {
-                    GameObject hitObject = hit.collider.gameObject;
-                    Vector3 hitPoint = hit.point;
-
-                    bool isFlesh = false;
-                    if (hit.collider.TryGetComponent(out IDamagable damagable))
-                    {
-                        int damage = AttackDamage.Random();
-                        damagable.ApplyDamage(damage, PlayerManager.transform);
-                        isFlesh = damagable is NPCBodyPart or IHealthEntity;
-                    }
-
-                    SurfaceDefinition surfaceDefinition = isFlesh
-                        ? SurfaceDefinitionSet.GetSurface(FleshTag)
-                        : SurfaceDefinitionSet.GetSurface(hitObject, hitPoint, SurfaceDetection);
-
-                    if (surfaceDefinition != null)
-                    {
-                        if (surfaceDefinition.SurfaceMeleemarks.Length > 0)
-                        {
-                            Quaternion hitRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
-                            GameObject hitPrefab = surfaceDefinition.SurfaceMeleemarks.Random();
-                            GameObject bulletmark = Instantiate(hitPrefab, hitPoint, hitRotation);
-                            bulletmark.transform.SetParent(hit.transform);
-                        }
-
-                        if (surfaceDefinition.SurfaceMeleeImpact.Count > 0)
-                        {
-                            AudioClip audio = surfaceDefinition.SurfaceMeleeImpact.ToArray().Random();
-                            AudioSource.PlayClipAtPoint(audio, hitPoint, surfaceDefinition.MeleeImpactVolume);
-                        }
-                    }
-
-                    ApplyEffect("Hit");
+                    struck = true;
                     break;
                 }
 
@@ -173,9 +142,91 @@ namespace UHFPS.Runtime
                 yield return new WaitForSeconds(RaycastDelay);
             }
 
+            if (!struck && PlayerManager.MainCamera != null)
+            {
+                Transform camera = PlayerManager.MainCamera.transform;
+                StrikePinnedBoss(new Ray(camera.position, camera.forward), AttackRange.RealMax);
+            }
+
             yield return new WaitForAnimatorStateEnd(Animator, isLeftSlash ? SlashLState : SlashRState, AttackTimeOffset);
             isAttackEnd = true;
         }
+
+        bool Strike(Ray ray, float distance)
+        {
+            if (!Physics.Raycast(ray, out RaycastHit hit, distance, MeleeMask, QueryTriggerInteraction.Ignore))
+                return false;
+
+            ApplyStrike(hit);
+            return true;
+        }
+
+        bool StrikePinnedBoss(Ray ray, float distance)
+        {
+            if (!Physics.Raycast(ray, out RaycastHit hit, distance, MeleeMask, QueryTriggerInteraction.Ignore))
+                return false;
+
+            NPCHealth health = hit.collider.GetComponentInParent<NPCHealth>();
+            if (health == null)
+                return false;
+
+            BossTeleport boss = health.GetComponent<BossTeleport>();
+            if (boss == null)
+                boss = health.GetComponentInParent<BossTeleport>();
+            if (boss == null || !boss.AcceptsPlayerHit())
+                return false;
+
+            ApplyStrike(hit);
+            return true;
+        }
+
+        void ApplyStrike(RaycastHit hit)
+        {
+            GameObject hitObject = hit.collider.gameObject;
+            Vector3 hitPoint = hit.point;
+            bool isFlesh = false;
+            IDamagable damagable = hit.collider.GetComponentInParent<IDamagable>();
+            if (damagable != null)
+            {
+                damagable.ApplyDamage(AttackDamage.Random(), PlayerManager.transform);
+                isFlesh = damagable is NPCBodyPart or IHealthEntity;
+            }
+
+            NPCHealth health = hit.collider.GetComponentInParent<NPCHealth>();
+            if (health != null)
+            {
+                BossTeleport boss = health.GetComponent<BossTeleport>();
+                if (boss == null)
+                    boss = health.GetComponentInParent<BossTeleport>();
+                if (boss != null)
+                    boss.SprayBlood(hitPoint, hit.normal);
+            }
+
+            SurfaceDefinition surfaceDefinition = isFlesh
+                ? SurfaceDefinitionSet.GetSurface(FleshTag)
+                : SurfaceDefinitionSet.GetSurface(hitObject, hitPoint, SurfaceDetection);
+
+            if (surfaceDefinition != null)
+            {
+                if (surfaceDefinition.SurfaceMeleemarks.Length > 0)
+                {
+                    Quaternion hitRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+                    GameObject hitPrefab = surfaceDefinition.SurfaceMeleemarks.Random();
+                    GameObject bulletmark = Instantiate(hitPrefab, hitPoint, hitRotation);
+                    bulletmark.transform.SetParent(hit.transform);
+                }
+
+                if (surfaceDefinition.SurfaceMeleeImpact.Count > 0)
+                {
+                    AudioClip audio = surfaceDefinition.SurfaceMeleeImpact.ToArray().Random();
+                    AudioSource.PlayClipAtPoint(audio, hitPoint, surfaceDefinition.MeleeImpactVolume);
+                }
+            }
+
+            ApplyEffect("Hit");
+        }
+
+        int MeleeMask => RaycastMask.value | (1 << 9);
 
         public override void OnItemSelect()
         {

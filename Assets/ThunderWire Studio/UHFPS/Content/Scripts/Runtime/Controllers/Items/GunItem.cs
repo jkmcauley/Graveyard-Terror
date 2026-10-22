@@ -197,6 +197,8 @@ namespace UHFPS.Runtime
         private bool flashlightAttached;
         private bool flashlightEnabled;
         private bool flamePlaying;
+        private bool aimParameterChecked;
+        private bool hasAimParameter;
 
         public override string Name => GunName;
 
@@ -209,7 +211,8 @@ namespace UHFPS.Runtime
             inventory = Inventory.Instance;
 
             audioSource = GetComponent<AudioSource>();
-            muzzleRenderer = bulletAndMuzzleFlash.MuzzleFlash.GetComponentInChildren<MeshRenderer>();
+            if (bulletAndMuzzleFlash.MuzzleFlash != null)
+                muzzleRenderer = bulletAndMuzzleFlash.MuzzleFlash.GetComponentInChildren<MeshRenderer>();
 
             var behaviours = gameManager.GraphicReferences.Value["Gun"];
             ammoPanel = (CanvasGroup)behaviours[0];
@@ -236,6 +239,9 @@ namespace UHFPS.Runtime
         {
             base.Start();
 
+            if (ItemObject != null)
+                ItemObject.SetActive(false);
+
             // observe fov change
             OptionsManager.ObserveOption(aimingSettings.FovOption, (value) =>
             {
@@ -253,7 +259,7 @@ namespace UHFPS.Runtime
 
         public override void OnUpdate()
         {
-            if (!isEquipped)
+            if (!isEquipped || PlayerItems.CurrentItem != this)
             {
                 SetFlame(false);
                 return;
@@ -333,7 +339,10 @@ namespace UHFPS.Runtime
 
             if (gunProperties.EnableAiming)
             {
-                if (!IsBusy() && CanInteract && !isReloading && InputManager.ReadButton(Controls.ADS))
+                bool aiming = !IsBusy() && CanInteract && !isReloading && InputManager.ReadButton(Controls.ADS);
+                SetAim(aiming);
+
+                if (aiming)
                 {
                     if(gunProperties.EnableAdsPos && aimingSettings.AimingTransform != null)
                         aimingSettings.AimingTransform.localPosition = Vector3.SmoothDamp(aimingSettings.AimingTransform.localPosition, aimingSettings.AimPosition, ref aimVelocity, aimingSettings.AimSpeed);
@@ -360,6 +369,33 @@ namespace UHFPS.Runtime
                     MotionBlender.Weight = 1f;
                 }   
             }
+        }
+
+        void SetAim(bool aiming)
+        {
+            if (Animator == null)
+                return;
+
+            if (!aimParameterChecked)
+            {
+                foreach (AnimatorControllerParameter parameter in Animator.parameters)
+                {
+                    if (parameter.name == "isAiming" && parameter.type == AnimatorControllerParameterType.Bool)
+                    {
+                        hasAimParameter = true;
+                        break;
+                    }
+                }
+
+                aimParameterChecked = true;
+            }
+
+            if (!hasAimParameter)
+                return;
+
+            Animator.SetBool("isAiming", aiming);
+            if (Animator.layerCount > 1)
+                Animator.SetLayerWeight(1, aiming ? 1f : 0f);
         }
 
         void SetFlame(bool on)
@@ -400,6 +436,10 @@ namespace UHFPS.Runtime
 
             if (!stream)
             {
+                bulletsInMag--;
+                inventory.SetItemQuantity(GunInventoryItem, (ushort)Mathf.Max(bulletsInMag, 0), false);
+                UpdateAmmoText();
+
                 Animator.SetTrigger(animationSettings.ShootTrigger);
                 audioSource.PlayOneShotSoundClip(gunSounds.ShootSound);
 
@@ -431,26 +471,14 @@ namespace UHFPS.Runtime
                 if (TryPickShot(aim, out RaycastHit hit))
                     ShowBulletMark(hit, aim.direction);
 
-                if (!stream && bulletAndMuzzleFlash.BulletPrefab != null)
-                {
-                    Vector3 direction = hit.collider != null ? hit.point - bulletAndMuzzleFlash.BarrelEnd.position : aim.direction;
-                    direction.Normalize();
-
-                    if ((direction.z > 0 && aim.direction.z > 0) || (direction.z < 0 && aim.direction.z < 0))
-                    {
-                        ShowWeaponTrace(direction);
-                    }
-                }
+                if (!stream && bulletAndMuzzleFlash.BulletPrefab != null && bulletAndMuzzleFlash.BarrelEnd != null)
+                    ShowWeaponTrace(aim.direction);
             }
 
             if (stream)
                 return;
 
-            bulletsInMag--;
             ApplyEffect("Shoot");
-
-            inventory.SetItemQuantity(GunInventoryItem, (ushort)bulletsInMag, false);
-            UpdateAmmoText();
         }
 
         private LayerMask ShotMask
@@ -503,21 +531,44 @@ namespace UHFPS.Runtime
             bool isFlesh = false;
             IDamagable damagable = hit.collider.GetComponentInParent<IDamagable>();
             NPCHealth health = hit.collider.GetComponentInParent<NPCHealth>();
-            bool canIgnite = flameStream != null && health != null && !health.IsDead;
-            if (damagable != null)
+            BossTeleport boss = health != null ? health.GetComponent<BossTeleport>() : null;
+            if (boss == null && health != null)
+                boss = health.GetComponentInParent<BossTeleport>();
+
+            if (boss != null)
             {
-                float baseDamage = baseSettings.BaseDamage;
-                float rangeModifier = baseSettings.RangeModifier;
-                float maxDistance = baseSettings.DropoffDistance;
-                int damage = Mathf.RoundToInt(baseDamage * Mathf.Pow(rangeModifier, hit.distance / maxDistance));
-                damagable.ApplyDamage(damage, PlayerManager.transform);
-                isFlesh = damagable is NPCBodyPart or IHealthEntity;
+                isFlesh = true;
+                if (ItemObject != null && ItemObject.TryGetComponent(out CrossbowLoadedBolt crossbow))
+                {
+                    if (!boss.HitChest(hit.point))
+                        return;
+
+                    boss.Pin();
+                    health.PlayHitReaction();
+                    crossbow.StickIn(hit.collider.transform, hit.point, dir);
+                    Vector3 spray = hit.normal.sqrMagnitude > 0.0001f ? hit.normal : -dir;
+                    boss.SprayBlood(hit.point, spray);
+                }
             }
+            else
+            {
+                bool canIgnite = flameStream != null && health != null && !health.IsDead;
+                if (damagable != null)
+                {
+                    float baseDamage = baseSettings.BaseDamage;
+                    float rangeModifier = baseSettings.RangeModifier;
+                    float maxDistance = baseSettings.DropoffDistance;
+                    int damage = Mathf.RoundToInt(baseDamage * Mathf.Pow(rangeModifier, hit.distance / maxDistance));
+                    damagable.ApplyDamage(damage, PlayerManager.transform);
+                    isFlesh = damagable is NPCBodyPart or IHealthEntity;
+                }
 
-            if (canIgnite)
-                IgniteEnemy(health);
+                if (canIgnite)
+                    IgniteEnemy(health);
 
-            if (hit.rigidbody != null) hit.rigidbody.AddForceAtPosition(dir * baseSettings.Hitforce, hit.point);
+                if (hit.rigidbody != null)
+                    hit.rigidbody.AddForceAtPosition(dir * baseSettings.Hitforce, hit.point);
+            }
 
             Quaternion hitRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
             GameObject hitObject = hit.collider.gameObject;
@@ -549,8 +600,21 @@ namespace UHFPS.Runtime
 
         private void ShowWeaponTrace(Vector3 localAimDirection)
         {
-            GameObject bullet = Instantiate(bulletAndMuzzleFlash.BulletPrefab, bulletAndMuzzleFlash.BarrelEnd.position, Quaternion.identity);
-            bullet.GetComponent<Bullet>().SetDirection(localAimDirection, bulletAndMuzzleFlash.BulletForce * 10);
+            Vector3 origin = bulletAndMuzzleFlash.BarrelEnd.position;
+            Vector3 flight = localAimDirection;
+            float speed = bulletAndMuzzleFlash.BulletForce * 10f;
+            CrossbowLoadedBolt loaded = ItemObject != null ? ItemObject.GetComponent<CrossbowLoadedBolt>() : null;
+            if (loaded != null && loaded.HasBolt)
+            {
+                origin = loaded.BoltPosition + loaded.BoltDirection * 0.12f;
+                flight = PlayerManager.MainCamera.transform.forward;
+                speed = 12f;
+            }
+
+            GameObject bullet = Instantiate(bulletAndMuzzleFlash.BulletPrefab, origin, Quaternion.identity);
+            bullet.transform.localScale = loaded != null && loaded.HasBolt ? loaded.BoltWorldScale : bullet.transform.localScale;
+            if (bullet.TryGetComponent(out Bullet shot))
+                shot.SetDirection(flight, speed);
 
             if (bullet.TryGetComponent(out TrailRenderer trail))
                 trail.material.SetColor("_BaseColor", bulletAndMuzzleFlash.TrailColor);
@@ -624,7 +688,7 @@ namespace UHFPS.Runtime
         {
             CanvasGroupFader.StartFadeInstance(ammoPanel, true, 5f);
 
-            bulletsInMag = inventory.GetItemQuantity(GunInventoryItem);
+            bulletsInMag = LoadedRounds();
             carryingBullets = inventory.GetAllItemsQuantity(AmmoInventoryItem);
             UpdateAmmoText();
 
@@ -655,6 +719,8 @@ namespace UHFPS.Runtime
                 () => ammoPanel.gameObject.SetActive(false));
 
             SetFlame(false);
+            isEquipped = false;
+            SetAim(false);
             StopAllCoroutines();
             StartCoroutine(HideGun());
             Animator.SetTrigger(animationSettings.HideTrigger);
@@ -686,7 +752,7 @@ namespace UHFPS.Runtime
             ItemObject.SetActive(true);
             Animator.Play(animationSettings.GunIdleState);
 
-            bulletsInMag = inventory.GetItemQuantity(GunInventoryItem);
+            bulletsInMag = LoadedRounds();
             carryingBullets = inventory.GetAllItemsQuantity(AmmoInventoryItem);
             UpdateAmmoText();
 
@@ -699,6 +765,7 @@ namespace UHFPS.Runtime
             ammoPanel.alpha = 0f;
             ammoPanel.gameObject.SetActive(false);
 
+            SetAim(false);
             StopAllCoroutines();
             ItemObject.SetActive(false);
 
@@ -727,9 +794,15 @@ namespace UHFPS.Runtime
             if (flashlightAttached)
                 EnableControlsInfo(2);
             
-            bulletsInMag = inventory.GetItemQuantity(GunInventoryItem);
+            bulletsInMag = LoadedRounds();
             carryingBullets = inventory.GetAllItemsQuantity(AmmoInventoryItem);
             UpdateAmmoText();
+        }
+
+        private int LoadedRounds()
+        {
+            int stored = inventory.GetItemQuantity(GunInventoryItem);
+            return Mathf.Clamp(stored, 0, bulletSettings.BulletsPerMag);
         }
 
         public override void OnDrawGizmosSelected()

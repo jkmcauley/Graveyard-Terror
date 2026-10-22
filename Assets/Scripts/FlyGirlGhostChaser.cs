@@ -20,8 +20,12 @@ public class FlyGirlGhostChaser : MonoBehaviour
     [SerializeField] int _damage = 10;
     [SerializeField] float _attackCooldown = 2f;
 
+    [Header("Sound")]
+    [SerializeField] AudioClip _whisper;
+
     Vector3 _hoverPosition;
     float _nextAttackTime;
+    AudioSource _whisperSource;
 
     public bool IsAlive
     {
@@ -80,11 +84,17 @@ public class FlyGirlGhostChaser : MonoBehaviour
     void Update()
     {
         if (_ghostHealth != null && _ghostHealth.IsDead)
+        {
+            SetWhisper(false);
             return;
+        }
 
         ResolvePlayer();
         if (_player == null || _playerHealth == null || _playerHealth.IsDead)
+        {
+            SetWhisper(false);
             return;
+        }
 
         Vector3 target = new Vector3(
             _player.position.x,
@@ -114,6 +124,7 @@ public class FlyGirlGhostChaser : MonoBehaviour
         // Attack range is horizontal. The hover height would keep a 3D
         // distance above _attackRange even when she has stopped beside the player.
         bool attacking = inRange && horizontalDistance <= _attackRange;
+        SetWhisper(inRange && horizontalDistance > _attackRange);
         UpdateAnimator(inRange, attacking);
 
         if (attacking && Time.time >= _nextAttackTime)
@@ -150,6 +161,7 @@ public class FlyGirlGhostChaser : MonoBehaviour
 
     void OnGhostDied()
     {
+        SetWhisper(false);
         if (_animator == null)
             _animator = GetComponentInChildren<Animator>();
         if (_animator == null)
@@ -163,6 +175,29 @@ public class FlyGirlGhostChaser : MonoBehaviour
         _animator.SetBool("Fly", false);
         _animator.Play("Fly1Death_1", 0, 0f);
         _animator.Update(0f);
+    }
+
+    void SetWhisper(bool play)
+    {
+        if (_whisper == null)
+            return;
+
+        if (_whisperSource == null)
+        {
+            _whisperSource = gameObject.AddComponent<AudioSource>();
+            _whisperSource.clip = _whisper;
+            _whisperSource.loop = true;
+            _whisperSource.spatialBlend = 1f;
+            _whisperSource.playOnAwake = false;
+            _whisperSource.minDistance = 2f;
+            _whisperSource.maxDistance = 18f;
+            _whisperSource.volume = 0.7f;
+        }
+
+        if (play && !_whisperSource.isPlaying)
+            _whisperSource.Play();
+        else if (!play && _whisperSource.isPlaying)
+            _whisperSource.Stop();
     }
 
     void ResolvePlayer()

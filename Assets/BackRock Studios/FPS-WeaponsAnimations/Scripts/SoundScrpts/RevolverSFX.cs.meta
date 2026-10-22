@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d357f3a463f0e744ba9f1a20ea100979
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 290455
+  packageName: FPS Weapons Pack - The Gunsmith's Collection | Game Ready | PBR |
+    URP
+  packageVersion: 1.1.0
+  assetPath: Assets/BackRock Studios/FPS-WeaponsAnimations/Scripts/SoundScrpts/RevolverSFX.cs
+  uploadId: 1021552
